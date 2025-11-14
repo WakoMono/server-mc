@@ -1,0 +1,20 @@
+#------------------------------------------------#
+#                    GENERAL                     #
+#------------------------------------------------#
+
+#This section is used for migration from other plugins
+# set the parameters below to
+
+#The table name of this database (For instance, "alix")
+table-name:
+#The user of this database (For instance, "root")
+username:
+#Connection parameters
+password:
+host:
+port:
+# Path to the SQLite file, assuming the starting position in the "plugins" folder
+sqlite-path: "AuthMe/authme.db"
+
+#The maximum lifetime of a database connection (in seconds)
+max-lifetime: 60

@@ -1,0 +1,954 @@
+[06:06:19] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1; Ubuntu null) on Linux 6.8.0-1030-azure (amd64)
+[06:06:19] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21-130-master@b1b5d4c (2024-08-10T10:02:42Z) for Minecraft 1.21
+[06:06:19] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[06:06:20] [ServerMain/INFO]: [PluginInitializerManager] Initialized 16 plugins
+[06:06:20] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (16):
+ - AlixSystem (3.7.0), BetterStructures (2.0.4), DecentHolograms (2.9.8), DiscordSRV (1.30.1), LibsDisguises (11.0.13), LuckPerms (5.5.0), PlaceholderAPI (2.11.7), SMP (1.9), Shopkeepers (2.24.0), SkinsRestorer (15.9.0), Staff (1.0), TAB (5.3.2), UpgradeableSpawners (4.15.16), WorldEdit (7.3.9+6959-7adf70b), WorldGuard (7.0.14+2339-43997ec), packetevents (2.10.1)
+[06:06:24] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[06:06:25] [ServerMain/INFO]: Loaded 1290 recipes
+[06:06:25] [ServerMain/INFO]: Loaded 1399 advancements
+[06:06:26] [Server thread/INFO]: Starting minecraft server version 1.21
+[06:06:26] [Server thread/INFO]: Loading properties
+[06:06:26] [Server thread/INFO]: This server is running Paper version 1.21-130-master@b1b5d4c (2024-08-10T10:02:42Z) (Implementing API version 1.21-R0.1-SNAPSHOT)
+[06:06:27] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[06:06:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[06:06:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[06:06:27] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[06:06:28] [Server thread/INFO]: Default game type: SURVIVAL
+[06:06:28] [Server thread/INFO]: Generating keypair
+[06:06:28] [Server thread/INFO]: Starting Minecraft server on *:25565
+[06:06:28] [Server thread/INFO]: Using epoll channel type
+[06:06:28] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[06:06:28] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[06:06:28] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'worldguard-bukkit-7.0.14-dist.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.21.5
+	at org.bukkit.craftbukkit.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:369) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:121) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[06:06:28] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loading 4 libraries... please wait
+[06:06:28] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar
+[06:06:28] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar
+[06:06:28] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/org/slf4j/slf4j-jdk14/1.7.32/slf4j-jdk14-1.7.32.jar
+[06:06:28] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar
+[06:06:31] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.9+6959-7adf70b
+[06:06:32] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@4e9abf65]
+[06:06:32] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.7
+[06:06:32] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
+[06:06:34] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[06:06:34] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
+[06:06:34] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.13
+[06:06:36] [Server thread/INFO]: [UpgradeableSpawners] Loading server plugin UpgradeableSpawners v4.15.16
+[06:06:36] [Server thread/WARN]: [UpgradeableSpawners] [GUI] Invalid sound option: ENTITY_VILLAGER_NO Option: failure - You can find the correct sound names by using the /playsound command ingame. This is not a plugin issue. You need to edit the file en-US_gui.yml.
+[06:06:37] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[06:06:37] [Server thread/INFO]: [DecentHolograms] Loading server plugin DecentHolograms v2.9.8
+[06:06:37] [Server thread/INFO]: [Staff] Loading server plugin Staff v1.0
+[06:06:37] [Server thread/INFO]: [AlixSystem] Loading server plugin AlixSystem v3.7.0
+[06:06:37] [Server thread/INFO]: [AlixSystem] Successfully loaded the plugin from an external loader.
+[06:06:38] [Server thread/INFO]: [SMP] Loading server plugin SMP v1.9
+[06:06:38] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.24.0
+[06:06:39] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (966 ms).
+[06:06:39] [Server thread/INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R1
+[06:06:39] [Server thread/INFO]: [Shopkeepers] Loading config.
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': COPPER_GOLEM
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': CREAKING
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HAPPY_GHAST
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': MANNEQUIN
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[06:06:39] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': COPPER_GOLEM
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': CREAKING
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HAPPY_GHAST
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': MANNEQUIN
+[06:06:39] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[06:06:39] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[06:06:39] [Server thread/INFO]: [BetterStructures] Loading server plugin BetterStructures v2.0.4
+[06:06:39] [Server thread/INFO]: [BetterStructures] MagmaCore v1.13-SNAPSHOT initialized!
+[06:06:39] [Server thread/INFO]: [BetterStructures] Registered /logify command
+[06:06:39] [Server thread/INFO]: [BetterStructures] WorldGuard is not enabled! WorldGuard is recommended when using the EliteMobs integration.
+[06:06:39] [Server thread/INFO]: [DiscordSRV] Loading server plugin DiscordSRV v1.30.1
+[06:06:39] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.3.2
+[06:06:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[06:06:39] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.9+6959-7adf70b
+[06:06:39] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[06:06:39] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[06:06:40] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21.PaperweightAdapter as the Bukkit adapter
+[06:06:41] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[06:06:41] [Server thread/INFO]:         __    
+[06:06:41] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.0
+[06:06:41] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[06:06:41] [Server thread/INFO]: 
+[06:06:41] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[06:06:42] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[06:06:42] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[06:06:42] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[06:06:42] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1193ms)
+[06:06:42] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
+[06:06:44] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.0.
+[06:06:44] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[06:06:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.9.0]
+[06:06:44] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[06:06:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[06:06:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[06:06:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[06:06:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[06:06:44] [Server thread/INFO]: Preparing level "world"
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.0
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 1565b8f
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[06:06:45] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[06:06:45] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[06:06:47] [Server thread/INFO]: Time elapsed: 1088 ms
+[06:06:47] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[06:06:47] [Server thread/INFO]: Time elapsed: 197 ms
+[06:06:47] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[06:06:47] [Server thread/INFO]: Time elapsed: 98 ms
+[06:06:47] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.7
+[06:06:47] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[06:06:47] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
+[06:06:47] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.13
+[06:06:47] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
+[06:06:47] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises-11.0.13-Premium.jar
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_21_R1) (MC: 1.21)
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1695
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Build Date: 07/11/2025 07:53
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Build Hash: e48e4d4b~1
+[06:06:47] [Server thread/WARN]: [LibsDisguises] You are running an older minor version of Minecraft, you are currently using 1.21, consider updating to 1.21.4
+[06:06:47] [Server thread/WARN]: [LibsDisguises] Your version of Minecraft will not be supported in the future.
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Registered to: 1505240 (17)
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Premium enabled, thank you for supporting Lib's Disguises!
+[06:06:47] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will scale down (when possible) oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
+[06:06:48] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_5/15...
+[06:06:48] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_5/15 in 323.144698ms
+[06:06:50] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[06:06:50] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: libsdisguises [1.0.0]
+[06:06:50] [Server thread/INFO]: [LibsDisguises] PlaceholderAPI support enabled
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Enabling UpgradeableSpawners v4.15.16
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Version: 4.15.16 Previous: 4.15.16
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Server: 1.21.0 running Paper
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Licensed to: 1505240
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Experiencing issues or having questions? Join our Discord!
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Discord: https://discord.incredibleplugins.com
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Wiki: https://wiki.incredibleplugins.com/upgradeablespawners
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners]  
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Using SQLite as database driver.
+[06:06:50] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[06:06:50] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Successful connected to SQL database.
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Database is ready.
+[06:06:50] [Server thread/INFO]: [UpgradeableSpawners] Entity stacking capability enabled.
+[06:06:50] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
+[06:06:50] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_21_R1 (1.21).
+[06:06:51] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21! Trying to find NMS support
+[06:06:51] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[06:06:51] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[06:06:51] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
+[06:06:51] [Server thread/INFO]: [Staff] Enabling Staff v1.0
+[06:06:51] [Server thread/INFO]: [Staff] Staff Plugin has been enabled!
+[06:06:51] [Server thread/INFO]: [AlixSystem] Enabling AlixSystem v3.7.0
+[06:06:51] [Server thread/INFO]: [AlixSystem] Instantiated reflections with: Version Regex: 'null' Bukkit Version: 21
+[06:06:51] [Server thread/INFO]: Preparing start region for dimension minecraft:world_alix_captcha
+[06:06:51] [Server thread/INFO]: Time elapsed: 135 ms
+[06:06:51] [Server thread/INFO]: [AlixSystem] Optimizing chunk rendering in the verification world thanks to the Paper environment
+[06:06:52] [Attach Listener/ERROR]: [STDERR] [sun.instrument.InstrumentationImpl] WARNING: A Java agent has been loaded dynamically (/tmp/byteBuddyAgent14897234605093966071.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[06:06:52] [Server thread/INFO]: [AlixSystem] Using Fast Unsafe Epoll for FireWall Protection. Fast IPv4 look-ups are Enabled.
+[06:06:52] [Server thread/INFO]: [AlixVirtualLimbo] Starting virtual server...
+[06:06:53] [Server thread/INFO]: [AlixVirtualLimbo] Using Java for compression
+[06:06:59] [Server thread/INFO]: [AlixVirtualLimbo] Server started.
+[06:07:00] [Server thread/INFO]: [AlixSystem] Successfully pre-loaded the captcha world
+[06:07:00] [Server thread/INFO]: [AlixSystem] Using the optimized PaperAlixScheduler for task execution.
+[06:07:00] [Server thread/INFO]: [AlixSystem] Async scheduler parallelisms: 2
+[06:07:00] [Server thread/INFO]: [AlixSystem] Using VirtualThreads for blocking tasks execution.
+[06:07:00] [Server thread/INFO]: [SMP] Enabling SMP v1.9
+[06:07:01] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.24.0
+[06:07:01] [Server thread/INFO]: [BetterStructures] Enabling BetterStructures v2.0.4
+[06:07:01] [Server thread/INFO]:     ____       __  __            _____ __                  __                      
+[06:07:01] [Server thread/INFO]:    / __ )___  / /_/ /____  _____/ ___// /________  _______/ /___  __________  _____
+[06:07:01] [Server thread/INFO]:   / __  / _ \/ __/ __/ _ \/ ___/\__ \/ __/ ___/ / / / ___/ __/ / / / ___/ _ \/ ___/
+[06:07:01] [Server thread/INFO]:  / /_/ /  __/ /_/ /_/  __/ /   ___/ / /_/ /  / /_/ / /__/ /_/ /_/ / /  /  __(__  ) 
+[06:07:01] [Server thread/INFO]: /_____/\___/\__/\__/\___/_/   /____/\__/_/   \__,_/\___/\__/\__,_/_/   \___/____/
+[06:07:01] [Server thread/INFO]: [BetterStructures] Initialized version 2.0.4!
+[06:07:01] [Server thread/INFO]: [BetterStructures] Supported server version detected: v1_21_R1
+[06:07:01] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 123 ms to scan 1 urls, producing 1 keys and 5 values
+[06:07:01] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 8 ms to scan 1 urls, producing 1 keys and 29 values
+[06:07:01] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 1 keys and 1 values
+[06:07:01] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 50 ms to scan 104 urls, producing 0 keys and 0 values
+[06:07:01] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 1 keys and 10 values
+[06:07:02] [Server thread/INFO]: [DiscordSRV] Enabling DiscordSRV v1.30.1
+[06:07:02] [Server thread/INFO]: [TAB] Enabling TAB v5.3.2
+[06:07:03] [pool-29-thread-1/WARN]: [DiscordSRV] 
+
+The current build of DiscordSRV is outdated by 10 commits! Get the latest build at your favorite distribution center.
+
+Modrinth: https://modrinth.com/plugin/discordsrv/
+Github: https://github.com/DiscordSRV/DiscordSRV/releases/
+Direct Download: https://get.discordsrv.com/
+
+[06:07:03] [Server thread/INFO]: [TAB] Enabled in 1148ms
+[06:07:03] [Server thread/INFO]: [spark] Starting background profiler...
+[06:07:04] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[06:07:04] [Server thread/INFO]: Done preparing level "world" (19.365s)
+[06:07:04] [Server thread/INFO]: Running delayed init tasks
+[06:07:04] [Server thread/INFO]: [UpgradeableSpawners] [Integrations] Successfully integrated DecentHolograms as hologram manager.
+[06:07:04] [Server thread/INFO]: [UpgradeableSpawners] [Integrations] Successfully integrated PlaceholderAPI for parsing placeholders from 3rd party plugins in chat messages and GUI menus
+[06:07:04] [Server thread/INFO]: [UpgradeableSpawners] [Integrations] Successfully integrated LuckPerms for offline permission lookups.
+[06:07:04] [Server thread/INFO]: [UpgradeableSpawners] Using default item currency for economy. You can edit the currency item for each locale in the corresponding GUI language files. Strict mode: false
+[06:07:04] [Server thread/INFO]: Done (45.655s)! For help, type "help"
+[06:07:04] [Craft Scheduler Thread - 4 - BetterStructures/INFO]: [BetterStructures] Latest public release is 2.0.4
+[06:07:04] [Craft Scheduler Thread - 4 - BetterStructures/INFO]: [BetterStructures] Your version is 2.0.4
+[06:07:04] [Server thread/INFO]: Timings Reset
+[06:07:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: servertime [3.2]
+[06:07:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[06:07:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[06:07:04] [Server thread/INFO]: 3 placeholder hook(s) registered!
+[06:07:04] [Craft Scheduler Thread - 4 - BetterStructures/INFO]: [BetterStructures] You are running the latest version!
+[06:07:04] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] All commands have been successfully registered.
+[06:07:04] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] 
+ You're running an outdated version of AlixSystem (Using 3.7.0 with the newest being 3.7.1)! An update is available at: https://www.spigotmc.org/resources/alixsystem.109144/
+
+[06:07:04] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] Using the optimized Unsafe Effect Handler for potion effect management
+[06:07:04] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] Pre-generated the captcha pool with the size 3.
+[06:07:04] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] All files were successfully loaded!
+[06:07:04] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] AlixSystem has been successfully enabled.
+[06:07:05] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] Fully loaded the FireWall DataBase. Built-in blacklisted IPs: 282894 Blacklisted by this server: 0 Total: 282894
+[06:07:05] [DiscordSRV - Initialization/INFO]: [DiscordSRV] [JDA] Login Successful!
+[06:07:06] [JDA MainWS-ReadThread/INFO]: [DiscordSRV] [JDA] Connected to WebSocket
+[06:07:07] [JDA MainWS-ReadThread/INFO]: [DiscordSRV] [JDA] Finished Loading!
+[06:07:07] [DiscordSRV - Initialization/INFO]: [DiscordSRV] Console forwarding assigned to channel TC:🔒・console(1438582065376395370)
+[06:07:07] [DiscordSRV - Initialization/INFO]: [DiscordSRV] Enabling LuckPerms hook
+[06:07:07] [DiscordSRV - Initialization/INFO]: [DiscordSRV] Enabling PlaceholderAPI hook
+[06:07:07] [DiscordSRV - JDA Callback 0/INFO]: [DiscordSRV] Cleared all pre-existing slash commands in 1/1 guilds (0 cancelled)
+[06:07:07] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: discordsrv [1.30.1]
+[06:07:09] [ForkJoinPool.commonPool-worker-1/INFO]: [UpgradeableSpawners] There is a new version available: 4.15.17
+[06:07:44] [Server thread/INFO]: [AlixSystem] Player Aurelio_White[127.67.36.15] joined and was automatically verified for: Premium AutoLogin
+[06:07:45] [Server thread/INFO]: Aurelio_White joined the game
+[06:08:33] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:08:33] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:08:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:08:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:08:33] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:08:33] [Server thread/INFO]: [TAB] Enabled in 20ms
+[06:08:54] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:08:54] [Server thread/INFO]: [TAB] Disabled in 0ms
+[06:08:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:08:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:08:54] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:08:54] [Server thread/INFO]: [TAB] Enabled in 14ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_7_10/1...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_7_10/1 in 26.148235ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_13/2...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_13/2 in 95.589378ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_13_2/3...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_13_2/3 in 65.700498ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_14/4...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_14/4 in 63.648801ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_15/5...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_15/5 in 67.454729ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_16/6...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_16/6 in 124.635899ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_16_2/7...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_16_2/7 in 104.014412ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_17/8...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_17/8 in 136.3898ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_19/9...
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_19/9 in 136.597026ms
+[06:10:06] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_19_3/10...
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_19_3/10 in 193.214836ms
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_19_4/11...
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_19_4/11 in 152.960804ms
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20/12...
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20/12 in 141.109142ms
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_2/13...
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_2/13 in 141.798436ms
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 164.961577ms
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_5/15...
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_5/15 in 192.720924ms
+[06:10:07] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_21_2/16...
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_21_2/16 in 215.238398ms
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_21_4/17...
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_21_4/17 in 198.465668ms
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_21_5/18...
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_21_5/18 in 182.376453ms
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_21_6/19...
+[06:10:08] [Netty Epoll Server IO #3/INFO]: [alix.libs.com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_21_6/19 in 199.452909ms
+[06:10:10] [Netty Epoll Server IO #3/INFO]: [AlixVirtualLimbo] Player Daniuu7[127.214.78.87] passed the antibot verification
+[06:10:27] [ForkJoinPool-3-worker-4/INFO]: [AlixSystem] Player Daniuu7[127.214.78.87] joined and registered
+[06:10:27] [ForkJoinPool-3-worker-4/INFO]: Daniuu7 joined the game
+[06:10:34] [Async Chat Thread - #0/INFO]: [Not Secure] <Daniuu7> ola
+[06:10:40] [Async Chat Thread - #0/INFO]: [Not Secure] <Aurelio_White> hola
+[06:10:47] [Async Chat Thread - #0/INFO]: [Not Secure] <Daniuu7> qien eres
+[06:10:58] [Async Chat Thread - #0/INFO]: [Not Secure] <Aurelio_White> Wako
+[06:11:14] [Server thread/INFO]: Aurelio_White issued server command: /pl
+[06:12:12] [Async Chat Thread - #2/INFO]: [Not Secure] <Daniuu7> no hay tp ni set no?
+[06:12:17] [Server thread/INFO]: Daniuu7 issued server command: /pl
+[06:13:34] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> de momento, no
+[06:13:43] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> quiero hacerlo lo mas survival posible
+[06:13:50] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> probablemente en un futuro los agrege
+[06:14:04] [Async Chat Thread - #4/INFO]: [Not Secure] <Daniuu7> aunq sea añade las protes de mmtp
+[06:14:27] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> pero y lo divertido de que te hagan raid?
+[06:14:35] [Async Chat Thread - #4/INFO]: [Not Secure] <Daniuu7> divertido?
+[06:14:37] [Async Chat Thread - #4/INFO]: [Not Secure] <Daniuu7> AJJAJAJAw
+[06:14:39] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> XD
+[06:14:40] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> claro
+[06:14:56] [Async Chat Thread - #4/INFO]: [Not Secure] <Daniuu7> es n semianarquico entonces?
+[06:15:01] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> no
+[06:15:20] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> le voy agregar protes, pero no tiene caso, todavia no tengo tienda
+[06:15:24] [Server thread/INFO]: Aurelio_White issued server command: /shop
+[06:15:33] [Async Chat Thread - #4/INFO]: [Not Secure] <Daniuu7> ffrff
+[06:15:37] [Async Chat Thread - #4/INFO]: [Not Secure] <Aurelio_White> ffrff
+[06:16:05] [Server thread/INFO]: Aurelio_White issued server command: /vanish
+[06:16:09] [Server thread/INFO]: Aurelio_White issued server command: /tp Daniuu7
+[06:16:09] [Server thread/INFO]: [Aurelio_White: Teleported Aurelio_White to Daniuu7]
+[06:16:20] [Server thread/INFO]: Aurelio_White issued server command: /gamemode survival
+[06:16:20] [Server thread/INFO]: [Aurelio_White: Set own game mode to Survival Mode]
+[06:16:22] [Server thread/INFO]: Aurelio_White issued server command: /vanish
+[06:17:11] [Server thread/INFO]: Daniuu7 has made the advancement [Stone Age]
+[06:17:20] [JDA MainWS-ReadThread/WARN]: [DiscordSRV] [JDA] Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+[06:17:23] [JDA MainWS-ReadThread/INFO]: [DiscordSRV] [JDA] Connected to WebSocket
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV] [JDA] WebSocket connection was closed and cannot be recovered due to identification issues
+CloseCode(4004 / The account token sent with your identify payload is incorrect.)
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV] ===================================================
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV]  
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV]  DiscordSRV was disconnected from Discord because:
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV]  The bot token is invalid
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV]  
+[06:17:23] [JDA MainWS-WriteThread/ERROR]: [DiscordSRV] ===================================================
+[06:17:23] [Server thread/INFO]: [DiscordSRV] Disabling DiscordSRV v1.30.1
+[06:17:28] [DiscordSRV - Shutdown/WARN]: [DiscordSRV] JDA took too long to shut down, skipping
+[06:17:28] [DiscordSRV - Shutdown/INFO]: [DiscordSRV] Shutdown completed in 5005ms
+[06:17:28] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4966ms or 99 ticks behind
+[06:17:30] [Server thread/INFO]: Daniuu7 has made the advancement [Getting an Upgrade]
+[06:18:40] [Async Chat Thread - #6/INFO]: [Not Secure] <Aurelio_White> xd
+[06:18:56] [Async Chat Thread - #6/INFO]: [Not Secure] <Aurelio_White> los materiales se funden al picarlo
+[06:19:01] [Async Chat Thread - #6/INFO]: [Not Secure] <Aurelio_White> esta chido eso, no?
+[06:19:08] [Async Chat Thread - #6/INFO]: [Not Secure] <Daniuu7> es plugin=
+[06:19:39] [Async Chat Thread - #6/INFO]: [Not Secure] <Aurelio_White> si
+[06:19:46] [Async Chat Thread - #6/INFO]: [Not Secure] <Aurelio_White> q version te pusiste Dani?
+[06:20:07] [Server thread/INFO]: Aurelio_White issued server command: /kill
+[06:20:07] [Server thread/INFO]: Aurelio_White was killed
+[06:20:07] [Server thread/INFO]: [Aurelio_White: Killed Aurelio_White]
+[06:20:23] [Async Chat Thread - #6/INFO]: [Not Secure] <Daniuu7> 1.21
+[06:20:44] [Server thread/INFO]: Aurelio_White issued server command: /gamemode creative
+[06:20:44] [Server thread/INFO]: [Aurelio_White: Set own game mode to Creative Mode]
+[06:21:04] [Server thread/INFO]: Daniuu7 was slain by Zombie
+[06:21:06] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:21:06] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:21:06] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:21:06] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:21:06] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:21:06] [Server thread/INFO]: [TAB] Enabled in 222ms
+[06:21:42] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> tu eres de?
+[06:21:48] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> Mex
+[06:22:06] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> q hora es ahoi
+[06:22:25] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> 11
+[06:22:26] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> pm
+[06:22:30] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> dan eres premium?
+[06:22:34] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> temprano
+[06:22:35] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> no
+[06:22:41] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> a misael
+[06:22:46] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> creo que tu lo invitaste
+[06:22:50] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> no lo deja entrar
+[06:22:50] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> si
+[06:22:51] [Server thread/INFO]: [AlixSystem] Player Marqrtos[127.154.61.16] joined and was automatically verified for: Premium AutoRegister
+[06:22:51] [Server thread/INFO]: Marqrtos joined the game
+[06:22:59] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> cual era el problema
+[06:23:02] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> hola
+[06:23:04] [Netty Epoll Server IO #0/INFO]: [AlixVirtualLimbo] Player SrMisaelOficial[127.19.198.107] passed the antibot verification
+[06:23:06] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> ayuda
+[06:23:13] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> cual era el problema
+[06:23:13] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> la ip
+[06:23:17] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> q le sale
+[06:23:22] [ForkJoinPool-3-worker-8/INFO]: [AlixSystem] Player SrMisaelOficial[127.19.198.107] joined and registered
+[06:23:22] [ForkJoinPool-3-worker-8/INFO]: SrMisaelOficial joined the game
+[06:23:37] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> tp pls
+[06:24:22] [Server thread/INFO]: SrMisaelOficial was slain by Zombie
+[06:24:30] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> ayuida}
+[06:24:31] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> tas tonto hermano?
+[06:24:36] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> pos es un smp
+[06:24:53] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> donde estas misael
+[06:24:53] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> le quitas vida a los otros
+[06:24:54] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> no?
+[06:25:00] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> aqui
+[06:25:06] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> coord?
+[06:25:19] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> -66 73 83
+[06:25:47] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> hola
+[06:25:56] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:25:56] [Server thread/INFO]: [TAB] Disabled in 2ms
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] Failed to enable. Did you just invent a new way to break the plugin by misconfiguring it?
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] java.lang.NumberFormatException: For input string: "2 "
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.features.layout.LayoutConfiguration$LayoutDefinition$GroupPattern.fromSection(LayoutConfiguration.java:266)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.features.layout.LayoutConfiguration$LayoutDefinition$GroupPattern.access$100(LayoutConfiguration.java:247)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.features.layout.LayoutConfiguration$LayoutDefinition.fromSection(LayoutConfiguration.java:163)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.features.layout.LayoutConfiguration.fromSection(LayoutConfiguration.java:79)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.config.files.Config.<init>(Config.java:102)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.config.Configs.<init>(Configs.java:34)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.TAB.load(TAB.java:190)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.command.ReloadCommand.execute(ReloadCommand.java:24)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.shared.command.TabCommand.execute(TabCommand.java:48)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at TAB v5.3.2.jar//me.neznamy.tab.platforms.bukkit.BukkitTabCommand.onCommand(BukkitTabCommand.java:35)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:91)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:31)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:103)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:443)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.Commands.performCommand(Commands.java:350)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.Commands.performCommand(Commands.java:337)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.commands.Commands.performCommand(Commands.java:332)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2147)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$11(ServerGamePacketListenerImpl.java:2121)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.TickTask.run(TickTask.java:18)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:201)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1514)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1507)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1466)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1473)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1318)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[06:25:56] [Server thread/INFO]: [TAB] [WARN] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[06:26:01] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> no me agrada la seed
+[06:26:06] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:26:06] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:26:06] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:26:06] [Server thread/INFO]: [TAB] [WARN] Found a total of 4 issues.
+[06:26:06] [Server thread/INFO]: [TAB] Enabled in 24ms
+[06:26:21] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> solo ahi q salir
+[06:26:22] [Server thread/INFO]: Marqrtos has made the advancement [Stone Age]
+[06:26:33] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> que es un smp
+[06:26:41] [Server thread/INFO]: Marqrtos has made the advancement [Getting an Upgrade]
+[06:26:48] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> que es
+[06:26:51] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> survival multiplayer
+[06:26:56] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> sexo multiplayer
+[06:26:59] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> fak que rico
+[06:27:05] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> oigan
+[06:27:08] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> pueden vc?
+[06:27:18] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> nop
+[06:27:24] [Async Chat Thread - #8/INFO]: [Not Secure] <Daniuu7> solo escucho
+[06:27:34] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> tengo hambre
+[06:27:38] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:27:38] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:27:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:27:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:27:38] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:27:38] [Server thread/INFO]: [TAB] Enabled in 21ms
+[06:27:39] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> ayuda
+[06:27:52] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> comida
+[06:28:03] [Server thread/INFO]: SrMisaelOficial has made the advancement [Stone Age]
+[06:28:05] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:28:05] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:28:05] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:28:05] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:28:05] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:28:05] [Server thread/INFO]: [TAB] Enabled in 17ms
+[06:28:13] [Server thread/INFO]: SrMisaelOficial has made the advancement [Getting an Upgrade]
+[06:28:30] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> dame
+[06:28:40] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> que
+[06:28:43] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> comida
+[06:28:46] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> pq los animales dan comida cocinada
+[06:29:00] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:29:00] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:29:00] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:29:00] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:29:00] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:29:00] [Server thread/INFO]: [TAB] Enabled in 16ms
+[06:29:09] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:29:09] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:29:09] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:29:09] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:29:09] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:29:09] [Server thread/INFO]: [TAB] Enabled in 13ms
+[06:29:29] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> cierto
+[06:30:02] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> no m quejo
+[06:30:10] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> solo me cuesta un carbon cocinar toda la comida
+[06:30:11] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> alguien?
+[06:30:19] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> veo un negro
+[06:30:21] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> no jode mucho el survival la vdd
+[06:30:21] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> voy a atacarlo
+[06:30:32] [Server thread/INFO]: Daniuu7 issued server command: /msg SrMisaelOficial voy abuscar aldea vienes
+[06:30:34] [Async Chat Thread - #9/INFO]: [Not Secure] <Aurelio_White> ahora lo desactivo
+[06:30:40] [Server thread/INFO]: Aurelio_White issued server command: /smp:autosmelter
+[06:30:42] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> hola negro
+[06:31:00] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> pq corres
+[06:31:12] [Async Chat Thread - #9/INFO]: [Not Secure] <SrMisaelOficial> quiero salir de aqui
+[06:31:15] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> salgamos
+[06:31:15] [Server thread/INFO]: Daniuu7 issued server command: /msg SrMisaelOficial voy abuscar aldea vienes
+[06:31:16] [Server thread/INFO]: Aurelio_White issued server command: /autosmelter as
+[06:31:18] [Server thread/INFO]: Aurelio_White issued server command: /autosmelter sas
+[06:31:28] [Async Chat Thread - #8/INFO]: [Not Secure] <Aurelio_White> ya esta desactivada la opcion
+[06:31:31] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> cual
+[06:31:45] [Server thread/INFO]: SrMisaelOficial issued server command: /tell Daniuu7 yo busco por mi lado y tu por el tuyo y el q encuentre primero pasa cords
+[06:31:52] [Server thread/INFO]: Aurelio_White issued server command: /eggpower sep
+[06:31:55] [Async Chat Thread - #9/INFO]: [Not Secure] <SrMisaelOficial> mar?
+[06:31:56] [Server thread/INFO]: Daniuu7 drowned
+[06:31:56] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> oye muevete
+[06:31:58] [Server thread/INFO]: Aurelio_White issued server command: /eggpower sep
+[06:32:02] [Async Chat Thread - #9/INFO]: [Not Secure] <SrMisaelOficial> JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+[06:32:15] [Server thread/INFO]: Aurelio_White issued server command: /explodingeggs see
+[06:32:18] [Server thread/INFO]: Aurelio_White issued server command: /explodingeggs ee
+[06:32:22] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> mira ahi
+[06:32:46] [Server thread/INFO]: Marqrtos has made the advancement [Ice Bucket Challenge]
+[06:32:55] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> tengo esto
+[06:33:12] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> veni
+[06:33:17] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> SrMisaelOficial
+[06:33:20] [Async Chat Thread - #9/INFO]: [Not Secure] <Marqrtos> guarda estas coord
+[06:33:26] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> para?
+[06:33:27] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> volveremos cuando tengamos hierro
+[06:33:36] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> son 18 de hierro
+[06:33:38] [Async Chat Thread - #8/INFO]: [Not Secure] <Marqrtos> pq si
+[06:33:40] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> de oro*
+[06:33:44] [Async Chat Thread - #8/INFO]: [Not Secure] <SrMisaelOficial> deja el hambre bro
+[06:35:13] [Async Chat Thread - #10/INFO]: [Not Secure] <Marqrtos> SrMisaelOficial on tas
+[06:35:24] [Async Chat Thread - #10/INFO]: [Not Secure] <SrMisaelOficial> encontre iglu
+[06:35:50] [Async Chat Thread - #10/INFO]: [Not Secure] <SrMisaelOficial> esto vale oro
+[06:36:09] [Server thread/INFO]: SrMisaelOficial issued server command: /tell Daniuu7 ya no necesitamos aldea, elige un sitio donde hacer casa
+[06:36:25] [Server thread/INFO]: Daniuu7 issued server command: /msg SrMisaelOficial por?
+[06:36:49] [Server thread/INFO]: SrMisaelOficial issued server command: /tell Daniuu7 los iglus tienen dos aldeanos, nos los llevamos con barcos
+[06:36:50] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:36:50] [Server thread/INFO]: [TAB] Disabled in 3ms
+[06:36:50] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:36:50] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:36:50] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:36:50] [Server thread/INFO]: [TAB] Enabled in 31ms
+[06:37:08] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:37:08] [Server thread/INFO]: [TAB] Disabled in 4ms
+[06:37:08] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:37:08] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:37:08] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:37:08] [Server thread/INFO]: [TAB] Enabled in 27ms
+[06:37:10] [Server thread/INFO]: Daniuu7 has made the advancement [Acquire Hardware]
+[06:37:17] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:37:17] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:37:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:37:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:37:17] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:37:17] [Server thread/INFO]: [TAB] Enabled in 12ms
+[06:37:21] [Server thread/INFO]: Daniuu7 issued server command: /msg SrMisaelOficial por?
+[06:37:25] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:37:25] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:37:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:37:25] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:37:25] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:37:25] [Server thread/INFO]: [TAB] Enabled in 14ms
+[06:37:29] [Server thread/INFO]: Daniuu7 issued server command: /msg SrMisaelOficial ok voy a salir del bioma de neive
+[06:37:46] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:37:46] [Server thread/INFO]: [TAB] Disabled in 7ms
+[06:37:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:37:46] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:37:46] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:37:46] [Server thread/INFO]: [TAB] Enabled in 20ms
+[06:37:55] [Server thread/INFO]: SrMisaelOficial has made the advancement [Local Brewery]
+[06:38:18] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:38:18] [Server thread/INFO]: [TAB] Disabled in 0ms
+[06:38:18] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:38:18] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:38:18] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[06:38:18] [Server thread/INFO]: [TAB] Enabled in 14ms
+[06:38:32] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> q asco
+[06:38:42] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> ?
+[06:38:46] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> la seed es un asco
+[06:38:53] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> y si
+[06:39:02] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:39:02] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:39:02] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:39:02] [Server thread/INFO]: [TAB] Enabled in 14ms
+[06:39:06] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> tienen cama?
+[06:39:09] [Server thread/INFO]: SrMisaelOficial has made the advancement [Sweet Dreams]
+[06:39:09] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> no
+[06:39:28] [Server thread/INFO]: Daniuu7 has made the advancement [Monster Hunter]
+[06:39:30] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> Aurelio_White tienes operador?
+[06:39:31] [Server thread/INFO]: Aurelio_White issued server command: /gamerule playersSleepingPercentage 2
+[06:39:31] [Server thread/INFO]: [Aurelio_White: Gamerule playersSleepingPercentage is now set to: 2]
+[06:39:41] [Server thread/INFO]: Aurelio_White issued server command: /gamerule playersSleepingPercentage -1
+[06:39:41] [Server thread/INFO]: [Aurelio_White: Gamerule playersSleepingPercentage is now set to: -1]
+[06:39:44] [Async Chat Thread - #12/INFO]: [Not Secure] <Aurelio_White> duerme
+[06:39:58] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> ponlo q duerma con 1 solo
+[06:40:06] [Async Chat Thread - #13/INFO]: [Not Secure] <Aurelio_White> es lo que acabo de hacer
+[06:40:13] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> oigan
+[06:40:25] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> ah pense q lo pusiste pa 2
+[06:40:26] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> es normal que
+[06:40:32] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> aparesca una luz y luego desaparesca
+[06:40:36] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> en una cueva
+[06:40:43] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> q cuando prendieron el dia ya no habia nada
+[06:40:46] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> y empieza a llover, vaya puta mierda
+[06:40:46] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> pero vi algo brillando
+[06:40:52] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> es normal?
+[06:40:58] [Async Chat Thread - #13/INFO]: [Not Secure] <Aurelio_White> no
+[06:41:01] [Async Chat Thread - #13/INFO]: [Not Secure] <Aurelio_White> son fantasmas
+[06:41:03] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> f
+[06:41:05] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> q miedo
+[06:41:10] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> les juro que vi una luz abajo
+[06:41:13] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> y cuando vi ya no habia nada
+[06:41:20] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> cuando baje mucho ya no habia nadisima
+[06:41:22] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> llora pues
+[06:41:26] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> y pq llorare
+[06:41:52] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> pq yo tengo caña de azucar y tu no
+[06:42:00] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> yo vi un fantasma y tu no
+[06:42:09] [Server thread/INFO]: Villager Villager['Villager'/18848, uuid='dad0d0da-af0d-476b-9b33-0346d691bc48', l='ServerLevel[world]', x=-1441.72, y=88.00, z=348.37, cpos=[-91, 21], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+[06:42:17] [Server thread/WARN]: [BetterStructures] No start modules exist, you need to install or make modules first!
+[06:42:33] [Server thread/INFO]: [AlixSystem] Player Marqrtos[127.154.61.16] disconnected
+[06:42:33] [Server thread/INFO]: Marqrtos left the game
+[06:42:36] [Server thread/INFO]: [AlixSystem] Player Marqrtos[127.154.61.16] joined and was automatically verified for: Premium AutoLogin
+[06:42:36] [Server thread/INFO]: Marqrtos joined the game
+[06:42:44] [Server thread/INFO]: SrMisaelOficial has made the advancement [Acquire Hardware]
+[06:42:54] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> EY
+[06:42:59] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> DA EL HIERRO COCINADO
+[06:43:04] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> quien
+[06:43:15] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> y m lo pone en el inventario
+[06:43:17] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> que rico
+[06:43:18] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:43:18] [Server thread/INFO]: [TAB] Disabled in 5ms
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:18] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:43:18] [Server thread/INFO]: [TAB] Enabled in 29ms
+[06:43:27] [Async Chat Thread - #12/INFO]: [Not Secure] <SrMisaelOficial> pq no pones essentials? Aurelio_White
+[06:43:41] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> oigan
+[06:43:53] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:43:53] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:43:53] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:43:53] [Server thread/INFO]: [TAB] Enabled in 10ms
+[06:44:02] [Async Chat Thread - #12/INFO]: [Not Secure] <Marqrtos> es normal que vi un bloque de hielo y cuando vine ya no hay nada?
+[06:44:17] [Server thread/INFO]: Daniuu7 fell from a high place
+[06:44:18] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:44:18] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:44:18] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:44:18] [Server thread/INFO]: [TAB] Enabled in 16ms
+[06:44:21] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> es que no juego hace 5 meses
+[06:44:25] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> estas jugando la version creepu de minecraft o q?
+[06:44:34] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> soy premium asi que no se
+[06:44:39] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> y tengo los chunks al 10
+[06:44:48] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> es que vi un bloque de hielo y cuando vine no hay nada
+[06:44:49] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> ecusame por no tener dinero mamaguebo
+[06:44:54] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> no vi particula de eso
+[06:44:56] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> pero nada
+[06:45:00] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> xd
+[06:45:07] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> ei weies
+[06:45:12] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> la caña de esta esta cortada
+[06:45:13] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:45:13] [Server thread/INFO]: [TAB] Disabled in 0ms
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:45:13] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:45:13] [Server thread/INFO]: [TAB] Enabled in 11ms
+[06:45:15] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> y en el piso
+[06:45:17] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> quien fue
+[06:45:24] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> queti
+[06:45:28] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> importa
+[06:45:38] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> quita la lluviaaa
+[06:45:43] [Async Chat Thread - #13/INFO]: [Not Secure] <SrMisaelOficial> mis fps se van de paseooo
+[06:45:48] [Async Chat Thread - #13/INFO]: [Not Secure] <Marqrtos> no quiero
+[06:45:57] [Server thread/INFO]: Aurelio_White issued server command: /weather clear
+[06:45:57] [Server thread/INFO]: [Aurelio_White: Set the weather to clear]
+[06:46:02] [Async Chat Thread - #13/INFO]: [Not Secure] <Aurelio_White> justo se quita lmao
+[06:46:32] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:46:32] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:32] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:46:32] [Server thread/INFO]: [TAB] Enabled in 11ms
+[06:46:47] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:46:47] [Server thread/INFO]: [TAB] Disabled in 2ms
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:46:47] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:46:47] [Server thread/INFO]: [TAB] Enabled in 11ms
+[06:47:19] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:47:19] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:47:19] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:47:19] [Server thread/INFO]: [TAB] Enabled in 12ms
+[06:47:23] [Server thread/INFO]: Villager Villager['Villager'/27169, uuid='2b3bf8c5-2b05-4aef-a5ef-4202223badd6', l='ServerLevel[world]', x=91.28, y=69.50, z=-406.63, cpos=[5, -26], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+[06:47:28] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> vi un nombre y una skin
+[06:47:30] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> pero no hay nadie
+[06:47:34] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> creo que es el sueño q tengo
+[06:47:50] [Async Chat Thread - #14/INFO]: [Not Secure] <SrMisaelOficial> mano busca un sacerdote y exorsiza tu pc
+[06:47:56] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> laptop
+[06:48:03] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> creo q es mi mente
+[06:48:09] [Async Chat Thread - #14/INFO]: [Not Secure] <SrMisaelOficial> wES LA MISMA MIERDA
+[06:48:09] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:48:09] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:09] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:48:09] [Server thread/INFO]: [TAB] Enabled in 21ms
+[06:48:22] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:48:22] [Server thread/INFO]: [TAB] Disabled in 0ms
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:22] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:48:22] [Server thread/INFO]: [TAB] Enabled in 43ms
+[06:48:25] [Async Chat Thread - #15/INFO]: [Not Secure] <Marqrtos> wei antes ahorita
+[06:48:29] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> vi una vaca
+[06:48:31] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> le pegue y mate a 2
+[06:48:34] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:48:34] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:34] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:48:34] [Server thread/INFO]: [TAB] Enabled in 18ms
+[06:48:35] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> y la tercera desaparecio
+[06:48:57] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:48:57] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:48:57] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:48:57] [Server thread/INFO]: [TAB] Enabled in 10ms
+[06:49:33] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> SrMisaelOficial
+[06:49:37] [Async Chat Thread - #14/INFO]: [Not Secure] <SrMisaelOficial> hablalo
+[06:49:41] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> es normal que de la nada vi una sombra negra
+[06:49:44] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> y voltee y no hay nadie
+[06:49:46] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> ni mods tengo
+[06:49:57] [Async Chat Thread - #14/INFO]: [Not Secure] <SrMisaelOficial> lo q tienes es esquizofrenia
+[06:50:07] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> te espero
+[06:50:14] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> -909
+[06:50:18] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> 73
+[06:50:20] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:50:20] [Server thread/INFO]: [TAB] Disabled in 0ms
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:20] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:50:20] [Server thread/INFO]: [TAB] Enabled in 10ms
+[06:50:20] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> 2355
+[06:50:24] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> para la casa
+[06:50:28] [Async Chat Thread - #14/INFO]: [Not Secure] <Marqrtos> ya vuelvo
+[06:50:29] [Server thread/INFO]: [AlixSystem] Player Marqrtos[127.154.61.16] disconnected
+[06:50:29] [Server thread/INFO]: Marqrtos left the game
+[06:50:38] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:50:38] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:50:38] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:50:38] [Server thread/INFO]: [TAB] Enabled in 12ms
+[06:50:41] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:50:55] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:50:56] [Server thread/INFO]: Aurelio_White issued server command: /vanish
+[06:51:00] [Server thread/INFO]: Aurelio_White issued server command: /vanish
+[06:51:13] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:51:36] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:51:48] [Server thread/INFO]: SrMisaelOficial has made the advancement [Monster Hunter]
+[06:51:48] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:52:13] [Server thread/INFO]: SrMisaelOficial was slain by Drowned
+[06:52:22] [Server thread/INFO]: Daniuu7 was blown up by Creeper
+[06:52:28] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:52:28] [Server thread/INFO]: [TAB] Disabled in 1ms
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:28] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:52:28] [Server thread/INFO]: [TAB] Enabled in 8ms
+[06:52:31] [Async Chat Thread - #16/INFO]: [Not Secure] <Daniuu7> mñn juego
+[06:52:34] [Async Chat Thread - #16/INFO]: [Not Secure] <Daniuu7> el sueño
+[06:52:36] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:52:38] [Async Chat Thread - #16/INFO]: [Not Secure] <Daniuu7> me esta matando}w
+[06:52:43] [Server thread/INFO]: Aurelio_White issued server command: /tab reload
+[06:52:43] [Server thread/INFO]: [TAB] Disabled in 0ms
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Missing configuration section "header-footer.designs.default.header" of type List, using default value [].
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[06:52:43] [Server thread/INFO]: [TAB] [WARN] Found a total of 8 issues.
+[06:52:43] [Server thread/INFO]: [TAB] Enabled in 6ms
+[06:52:45] [Server thread/INFO]: [AlixSystem] Player Daniuu7[127.214.78.87] disconnected
+[06:52:45] [Server thread/INFO]: Daniuu7 left the game
+[06:52:51] [Server thread/INFO]: SrMisaelOficial was slain by Drowned
+[06:53:03] [Server thread/INFO]: Aurelio_White issued server command: /kick SrMisaelOficial AFK
+[06:53:03] [Server thread/INFO]: [AlixSystem] Player SrMisaelOficial[127.19.198.107] disconnected
+[06:53:03] [Server thread/INFO]: SrMisaelOficial left the game
+[06:53:03] [Server thread/INFO]: [Aurelio_White: Kicked SrMisaelOficial: AFK]
+[06:53:12] [Server thread/INFO]: [AlixSystem] Player SrMisaelOficial[127.19.198.107] joined and was automatically verified for: IP AutoLogin
+[06:53:12] [Server thread/INFO]: SrMisaelOficial joined the game
+[06:53:18] [Server thread/INFO]: SrMisaelOficial was slain by Drowned
+[06:53:22] [Server thread/INFO]: Aurelio_White issued server command: /vanish
+[06:53:24] [Server thread/INFO]: Aurelio_White issued server command: /tp SrMisaelOficial
+[06:53:24] [Server thread/INFO]: [Aurelio_White: Teleported Aurelio_White to SrMisaelOficial]
+[06:53:37] [Server thread/INFO]: SrMisaelOficial was impaled by Drowned
+[06:53:45] [Server thread/INFO]: Aurelio_White issued server command: /gamemode survival
+[06:53:45] [Server thread/INFO]: [Aurelio_White: Set own game mode to Survival Mode]
+[06:53:49] [Server thread/INFO]: Aurelio_White issued server command: /vans
+[06:53:50] [Server thread/INFO]: Aurelio_White issued server command: /vanish
+[06:54:03] [Server thread/INFO]: SrMisaelOficial was slain by Drowned
+[06:54:11] [Async Chat Thread - #18/INFO]: [Not Secure] <SrMisaelOficial> muchas gracias
+[06:54:46] [Async Chat Thread - #18/INFO]: [Not Secure] <Aurelio_White> vi q le estabas haciendo lucha XD
+[06:55:07] [Async Chat Thread - #18/INFO]: [Not Secure] <SrMisaelOficial> tienes algo mio?
+[06:55:09] [Async Chat Thread - #18/INFO]: [Not Secure] <Aurelio_White> si invitas a mas gente, te doy rango o algo
+[06:55:12] [Async Chat Thread - #18/INFO]: [Not Secure] <Aurelio_White> no, no tengo nada
+[06:55:15] [Server thread/INFO]: Aurelio_White issued server command: /kill
+[06:55:15] [Server thread/INFO]: Aurelio_White was killed
+[06:55:15] [Server thread/INFO]: [Aurelio_White: Killed Aurelio_White]
+[06:55:20] [Server thread/INFO]: Aurelio_White issued server command: /gamemode creative
+[06:55:20] [Server thread/INFO]: [Aurelio_White: Set own game mode to Creative Mode]
+[06:55:23] [Async Chat Thread - #18/INFO]: [Not Secure] <SrMisaelOficial> a
+[06:55:36] [Async Chat Thread - #18/INFO]: [Not Secure] <SrMisaelOficial> bueno gracias bonito
+[06:55:40] [Async Chat Thread - #18/INFO]: [Not Secure] <SrMisaelOficial> vere si puedo conseguir gente
+[06:56:09] [Server thread/INFO]: Aurelio_White issued server command: /lp creategroup bf
+[06:56:09] [luckperms-command-executor/INFO]: [LP] LOG > (Aurelio_White) [G] (bf)
+[06:56:09] [luckperms-command-executor/INFO]: [LP] LOG > create
+[06:56:17] [Server thread/INFO]: Aurelio_White issued server command: /lp group bf parent set default
+[06:56:17] [luckperms-command-executor/INFO]: [LP] LOG > (Aurelio_White) [G] (bf)
+[06:56:17] [luckperms-command-executor/INFO]: [LP] LOG > parent set default
+[06:56:20] [Server thread/INFO]: [AlixSystem] Player Marqrtos[127.153.77.230] joined and was automatically verified for: Premium AutoLogin
+[06:56:20] [Server thread/INFO]: Marqrtos joined the game
+[06:56:54] [Server thread/INFO]: Marqrtos has made the advancement [Monster Hunter]
+[06:56:59] [Async Chat Thread - #20/INFO]: [Not Secure] <Marqrtos> hola
+[06:57:38] [Async Chat Thread - #20/INFO]: [Not Secure] <Marqrtos> SrMisaelOficial
+[06:57:47] [Async Chat Thread - #20/INFO]: [Not Secure] <SrMisaelOficial> no estoy de camino donde ti
+[06:57:52] [Async Chat Thread - #20/INFO]: [Not Secure] <Marqrtos> me das hierro?
+[06:58:01] [Async Chat Thread - #20/INFO]: [Not Secure] <SrMisaelOficial> si apenas tengo 4
+[06:58:13] [Async Chat Thread - #20/INFO]: [Not Secure] <SrMisaelOficial> y estoy muy lejos tuyow
+[06:58:17] [Async Chat Thread - #20/INFO]: [Not Secure] <Marqrtos> f
+[06:58:36] [Async Chat Thread - #20/INFO]: [Not Secure] <SrMisaelOficial> encontre lo del anciano
+[06:59:52] [Server thread/INFO]: Marqrtos has made the advancement [Acquire Hardware]
+[07:00:10] [Server thread/INFO]: Aurelio_White issued server command: /autosmelter as
+[07:00:30] [Server thread/INFO]: Marqrtos has made the advancement [Isn't It Iron Pick]
+[07:00:45] [Async Chat Thread - #22/INFO]: [Not Secure] <SrMisaelOficial> EY
+[07:00:51] [Async Chat Thread - #23/INFO]: [Not Secure] <SrMisaelOficial> ENCONTRE UNA OBEJA ROSA
+[07:01:30] [Async Chat Thread - #23/INFO]: [Not Secure] <Marqrtos> no veo nada
+[07:02:00] [Async Chat Thread - #23/INFO]: [Not Secure] <Marqrtos> ya me ire a dormir oigan agregen el tp pq es muy aburrido
+[07:02:07] [Async Chat Thread - #23/INFO]: [Not Secure] <Marqrtos> y me da paja ir donde estan los demas
+[07:02:10] [Async Chat Thread - #23/INFO]: [Not Secure] <Marqrtos> buenas noches
+[07:02:12] [Server thread/INFO]: [AlixSystem] Player Marqrtos[127.154.61.16] disconnected
+[07:02:12] [Server thread/INFO]: Marqrtos left the game
+[07:02:28] [Async Chat Thread - #23/INFO]: [Not Secure] <SrMisaelOficial> bro realmente no queria jugar solo
+[07:04:02] [Async Chat Thread - #24/INFO]: [Not Secure] <Aurelio_White> invita people
+[07:04:06] [Server thread/INFO]: Aurelio_White issued server command: //wand
+[07:04:08] [Async Chat Thread - #24/INFO]: [Not Secure] <SrMisaelOficial> son las 3 am
+[07:04:13] [Async Chat Thread - #24/INFO]: [Not Secure] <Aurelio_White> XD
+[07:04:17] [Async Chat Thread - #24/INFO]: [Not Secure] <Aurelio_White> ya duerme
+[07:04:26] [Async Chat Thread - #24/INFO]: [Not Secure] <SrMisaelOficial> obligame
+[07:05:35] [Async Chat Thread - #26/INFO]: [Not Secure] <Aurelio_White> que sadico te pusiste
+[07:05:54] [Async Chat Thread - #26/INFO]: [Not Secure] <SrMisaelOficial> nunca esperes una respuesta normal de mi parte
+[07:07:16] [Server thread/WARN]: [BetterStructures] No start modules exist, you need to install or make modules first!

@@ -1,0 +1,92 @@
+# Punishments configuration for the /punish command.
+# Durations can be 'warn', 'perm', or a time string (e.g., '3h', '7d').
+# Special durations: 'perm_until_changed' for specific cases like NSFW usernames.
+# The order of the durations in the list determines the tier (1st item = Tier I, 2nd = Tier II, etc.).
+punishments:
+  mutes:
+    NSFW:
+    - 3h
+    - 6h
+    - 12h
+    - 24h
+    - 3d
+    - 7d
+    - 14d
+    - 30d
+    - perm
+    Spamming:
+    - warn
+    - 3h
+    - 6h
+    - 24h
+    - 3d
+    - 7d
+    - 14d
+    - 30d
+    - perm
+    Discrimination:
+    - 1d
+    - 3d
+    - 7d
+    - 14d
+    - 30d
+    - perm
+    Death Threats:
+    - 3d
+    - 7d
+    - 14d
+    - 30d
+    - perm
+    Advertising:
+    - 7d
+    - 14d
+    - 21d
+    - 30d
+    - perm
+    Crosstrading:
+    - warn
+    - 1d
+    - 7d
+    - 14d
+    - 30d
+    - perm
+    IRL Trading:
+    - warn
+    - 3d
+    - 7d
+    - 14d
+    - 30d
+    - perm
+    Mute Evasion:
+    - perm
+  
+  bans:
+    Blacklisted Modifications:
+    - 1d
+    - 3d
+    - 7d
+    - 14d
+    - 21d
+    - 30d
+    - 60d
+    - perm
+    Bug Abuse:
+    - 1d
+    - 3d
+    - 7d
+    - 14d
+    - 21d
+    - 30d
+    - 60d
+    - perm
+    Duping:
+    - 14d
+    - 30d
+    - 60d
+    - perm
+    Ban Evasion:
+    - perm
+    DDoS/Dox/SWAT (+ threats):
+    - perm
+
+vanished-uuids: []

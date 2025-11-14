@@ -1,0 +1,316 @@
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/menus/gui-menus
+
+general:
+  role:
+    owner: '&4Owner'
+    visitor: '&7Visitor'
+  previous: '&8previous'
+  max: '&aMax reached'
+  wYes: '&aYes'
+  wNo: '&cNo'
+  disabled: '&cDisabled'
+  none: '&cNone'
+  enabled: '&aEnabled'
+common:
+  items:
+    default:
+      child_failure_page_previous:
+        name: '&4&lNo Previous Page'
+      child_failure_page_next:
+        name: '&4&lNo Next Page'
+      refresh_page_previous:
+        lore:
+        - '&8✖ &7Current: {current} / {pages}'
+        name: '&c&lPrevious Page'
+        material: ARROW
+        slots: 39
+      back:
+        lore:
+        - '&8✖ &7Go back to'
+        - '   &7{back}.'
+        name: '&c&lBack'
+        material: RED_STAINED_GLASS_PANE
+        slots: 37
+      refresh_page_next:
+        lore:
+        - '&8✖ &7Current: {current} / {pages}'
+        name: '&a&lNext Page'
+        material: ARROW
+        slots: 44
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        slots: 1-45
+  size: 45
+  entries:
+  - 10-36
+gui:
+  list_entities:
+    title: '&8Entities'
+    items:
+      default:
+        child_failure_cost:
+          lore:
+          - '&7You need&c {cost} &7for that.'
+          name: '&4&lNot enough Money'
+        child_failure_locked:
+          lore:
+          - '&7You''re missing the permission'
+          - '&7to purchase this entity type.'
+          name: '&4&lEntity locked'
+        entry_entity:
+          lore:
+          - '&8✖ &7Set as entity type.'
+          - '   &8• &7Cost:&c {cost}'
+          - '   &8• &7Unlocked: {unlocked}'
+          name: '&e&l{entity}'
+          material: INHERIT
+        entry_entity_purchased:
+          lore:
+          - '&8✖ &7Set as entity type.'
+          - '   &8• &7You already purchased this entity.'
+          - '   &8• &7Unlocked: {unlocked}'
+          name: '&e&l{entity} &8&l(&a&lPurchased&8&l)'
+          material: INHERIT
+  main:
+    title: '&8Spawner Menu'
+    items:
+      default:
+        entity-type:
+          lore:
+          - '&8✖ &7Change the spawners entity type.'
+          name: '&6&lEntity Type: {type}'
+          material: INHERIT
+          slots: 29
+        upgrade_nearby_entities:
+          lore:
+          - '&8✖ &7Upgrade the maximum amount of'
+          - '   &7nearby entities.'
+          - '    &8• &7Current: {current}'
+          - '    &8• &7Next:&a {next}'
+          - '      &7Cost:&c {cost}'
+          name: '&6&lNearby Entities'
+          material: skin:cc596a41daea51be2e9fec7de2d89068e2fa61c9d57a8bdde44b55937b6037
+          slots: 13
+        upgrade_player_range:
+          lore:
+          - '&8✖ &7Upgade the maxmimum distance'
+          - '   &7players can be away until the'
+          - '   &7spawner stops spawning.'
+          - '    &8• &7Current: {current}'
+          - '    &8• &7Next:&a {next}'
+          - '      &7Cost:&c {cost}'
+          name: '&6&lPlayer Distance'
+          material: PLAYER_HEAD
+          slots: 15
+        upgrade_spawn_amount:
+          lore:
+          - '&8✖ &7Upgrade the amount of entites'
+          - '   &7that are spawned each spawn interval.'
+          - '    &8• &7Current: {current}'
+          - '    &8• &7Next:&a {next}'
+          - '      &7Cost:&c {cost}'
+          name: '&6&lSpawn Amount'
+          material: skin:b85d4fda56bfeb85124460ff72b251dca8d1deb6578070d612b2d3adbf5a8
+          slots: 14
+        upgrade_spawn_interval:
+          lore:
+          - '&8✖ &7Upgrade the spawn interval.'
+          - '   &7A shorter spawn interval makes'
+          - '   &7your spawner spawn more often.'
+          - '    &8• &7Current: {current}'
+          - '    &8• &7Next:&a {next}'
+          - '      &7Cost:&c {cost}'
+          name: '&6&lSpawn Interval'
+          material: CLOCK
+          slots: 11
+        upgrade_period_amount:
+          lore:
+          - '&8✖ &7Upgrade maximum amount of entities'
+          - '   &7that can spawn each {time}&7.'
+          - '    &8• &7Current: {current}'
+          - '    &8• &7Next:&a {next}'
+          - '      &7Cost:&c {cost}'
+          - ''
+          - '   &8• &7After the amount is reached,'
+          - '     &7the spawner will stop until'
+          - '     &7the period is over.'
+          name: '&6&lSpawns during Period'
+          material: skin:a0a19e23d21f2db063cc55e99ae874dc8b23be779be34e52e7c7b9a25
+          slots: 12
+        status_paused_period_amount:
+          lore:
+          - '&7The spawner spawned its maximum'
+          - '&7amount of&3 {period_max_entities}&7 entities in&5 {period}&7.'
+          - ' &8• &7The period is over in&5 {period_end}&7.'
+          - ' &8• &7You can upgrade the period spawn amount'
+          - '   &7in this menu.'
+          name: '&4&lPaused: &cMax. Period Entities'
+          material: RED_WOOL
+          slots: 33
+        status_paused_nearby_entities:
+          lore:
+          - '&7There are too many entities'
+          - '&7around this spawner.'
+          - ' &8• &7Max. entities:&3 {spawner_max_entities}'
+          name: '&4&lPaused: &cMax. Entities around'
+          material: RED_WOOL
+          slots: 33
+        status_paused_redstone_signal:
+          lore:
+          - '&7The spawner is paused, because its'
+          - '&7receiving a redstone signal.'
+          name: '&4&lPaused: &cRedstone Signal'
+          material: RED_WOOL
+          slots: 33
+        status_paused_manually:
+          lore:
+          - '&8✖ &7Click to resume this spawner.'
+          - '   &8• &7The spawner can only be resumed,'
+          - '     &7if all limits, such as max. nearby'
+          - '     &7entities etc. are met.'
+          name: '&c&lPaused'
+          material: RED_WOOL
+          slots: 33
+        status_running:
+          lore:
+          - '&8✖ &7Click to pause this spawner.'
+          name: '&a&lRunning'
+          material: GREEN_WOOL
+          slots: 33
+        status_paused_area_max_entities:
+          lore:
+          - '&7There are too many entities in'
+          - '&7the area of this spawner. This'
+          - '&7area might include nearby chunks.'
+          - ' &8• &7Max. entities:&3 {area_max_entities}'
+          name: '&4&lPaused: &cMax. Entities in Area'
+          material: RED_WOOL
+          slots: 33
+        butcher:
+          lore:
+          - '&8✖ &7Should entities be instantly killed?'
+          name: '&6&lButcher: {status}'
+          material: IRON_SWORD
+          slots: 30
+        tip_upgradeablehoppers_connected:
+          lore:
+          - '&7Loot from butcher mode will'
+          - '&7automatically be inserted into'
+          - '&7the upgradeable hopper,'
+          - '&7for further transportation.'
+          name: '&a&lHopper Connected'
+          material: HOPPER
+          slots: 45
+          enchanted: true
+        tip_upgradeablehoppers:
+          lore:
+          - '&7If you place an upgradeable hopper'
+          - '&7underneath this spawner, it will'
+          - '&7automatically insert items from the'
+          - '&7the butcher mode into the hopper,'
+          - '&7for further transportation.'
+          - ' &8• &7Get an hopper: &e/uhopper get'
+          name: '&6&lHopper Item Transport'
+          material: HOPPER
+          slots: 45
+        butcher_forced_entity:
+          lore:
+          - '&cButcher mode is forcefully enabled'
+          - '&cby the server for this entity type.'
+          - '&7You cant toggle it currently.'
+          - ' &8• &7Entities are being killed instantly.'
+          name: '&6&lButcher is Forced'
+          material: IRON_SWORD
+          slots: 30
+        status_paused_butcher_hopper_missing:
+          name: '&4&lHopper missing'
+          lore:
+          - '&cFor butcher mode to be active,'
+          - '&cyou need to place an upgradeable'
+          - '&chopper below it. Either place one below it'
+          - '&cor disable butcher mode.'
+          - ' &8• &7Get an hopper: &e/uhopper get'
+          material: RED_WOOL
+          slots: 33
+        child_failure_cost:
+          lore:
+          - '&7You need&c {cost} &7for that.'
+          name: '&4&lNot enough Money'
+        child_failure_max:
+          lore:
+          - '&cThis spawner already reached'
+          - '&cthe highest level for this'
+          - '&cupgrade.'
+          - ' &8• &7Current value:&3 {current}'
+          name: '&4&lMax Level reached'
+        child_failure_perm:
+          lore:
+          - '&7Youre missing the permission'
+          - '&7to upgrade this level type for'
+          - '&7any spawner.'
+          name: '&4&lUpgrades locked'
+        child_failure_access:
+          lore:
+          - '&cYoure not allowed'
+          - '&cto do this.'
+          - ' &8• &7It belongs to&3 {player}&7.'
+          name: '&4Failure: &cNo Access'
+  list_player_spawners:
+    title: '&8Upgradeable Spawners'
+    items:
+      default:
+        child_failure_unloaded:
+          lore:
+          - '&cYou cant open the menu of a'
+          - '&cspawner, which is located in'
+          - '&can unloaded region.'
+          name: '&4&lChunk unloaded'
+        child_failure_cost:
+          lore:
+          - '&7You need&c {cost} &7for that.'
+          name: '&4&lNot enough Money'
+        child_failure_permission:
+          lore:
+          - '&7Youre missing the permission to'
+          - '&7do this.'
+          name: '&4&lMissing Permission'
+        entry_object:
+          lore:
+          - '&8✖ &7Open the spawner menu.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Teleport to the spawner'
+          - '   &7for&c {cost}&7.'
+          - '&7&lStats'
+          - ' &8• &7Interval: {interval}'
+          - ' &8• &7Spawns per period: {period}'
+          - ' &8• &7Max nearby: {nearby}'
+          - ' &8• &7Player range: {range}'
+          - ' &8• &7Spawn amount: {amount}'
+          name: '&6&l{entity}:&7 {world}, {x}, {y}, {z}'
+          material: SPAWNER
+physical:
+  spawner:
+    lore:
+    - ' &8• &7Owner:&3 {owner}'
+    - ' &8• &7Entity:&3 {entity}'
+    - ' &8• &7Interval: {interval}'
+    - ' &8• &7Period amount: {amount}'
+    - ' &8• &7Player range: {range}'
+    - ' &8• &7Max nearby: {nearby}'
+    - ' &8• &7Spawn amount: {count}'
+    name: '&e&lUpgradeable Spawner: {entity}'
+    material: SPAWNER
+  currency:
+    name: ''
+    material: GOLD_INGOT
+common_sounds:
+  # Play a sound when the item is set in the menu.
+  set:
+    # Each item starting with [item_type]_failure_<name> will have this sound set.
+    # You can still override the "sound_set" for any item in their sections.
+    failure: ENTITY_VILLAGER_NO

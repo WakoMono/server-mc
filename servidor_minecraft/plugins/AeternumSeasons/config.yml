@@ -1,0 +1,28 @@
+visual_atmosphere:
+  tick_period_ticks: 5   # cuán suave es la transición (más bajo = más fluido)
+  ease: 0.20             # 0.05..0.5 recomendable
+
+
+golems:
+  max_per_chunk: 3   # límite total de golems mejorados (nieve + hierro) por chunk
+
+  frostbound:
+    enabled: true
+    base_health: 240.0
+    winter_health_multiplier: 3.0
+    other_seasons_health_multiplier: 1.4
+
+    snowball_damage: 3.0
+    snowball_slow_ticks: 80
+    snowball_slow_level: 1
+
+  guardian:
+    enabled: true
+    base_health: 260.0
+    base_damage_multiplier: 1.2
+
+    winter_health_multiplier: 2.0
+    winter_damage_multiplier: 1.8
+
+    summer_fire_immunity: true
+    summer_fire_ticks_on_hit: 60

@@ -1,0 +1,113 @@
+events:
+  enabled: true
+
+  blood_moon:
+    enabled: true
+    chance_per_night: 0.08    # 8% de prob. cuando no haya otro evento
+    min_day: 10                # no antes del día 5 de la estación
+    max_times_per_season: 2   # máximo 2 por estación
+    world_time_night: true    # fuerza la noche durante el evento
+    freeze_night: false
+
+  heat_wave:
+    enabled: true
+    max_per_summer: 2
+    min_duration_days: 1
+    max_duration_days: 1
+    base_chance_per_day: 0.12
+
+    damage_exposed: true
+    tick_damage: 0.5          # daño por "golpe" si estás al sol
+    apply_weakness: true
+    min_armor_protection: 2   # piezas mínimas para mitigar (ej. casco especial)
+
+  winter_freeze:
+    enabled: true
+    max_per_winter: 1
+    min_duration_days: 4
+    max_duration_days: 7
+    base_chance_per_day: 0.15
+
+    damage_per_tick: 0.5        # daño por segundo si te congelas
+    min_armor_pieces: 2         # piezas mínimas de armadura para estar “seguro”
+    heat_radius_blocks: 5       # radio en el que se buscan bloques cálidos
+    heat_block_types:
+      - CAMPFIRE
+      - SOUL_CAMPFIRE
+      - TORCH
+      - SOUL_TORCH
+      - LANTERN
+      - FIRE
+      - FURNACE
+
+  magic_storm:
+    enabled: true
+    min_duration_days: 1
+    max_duration_days: 1
+    base_chance_per_day: 0.08
+    allowed_seasons: [ SPRING, SUMMER, AUTUMN, WINTER ]
+    rare_mob_chance: 0.35
+    extra_loot_chance: 0.40
+
+  festival:
+    enabled: true
+    min_duration_days: 3
+    max_duration_days: 3
+    base_chance_per_day: 0.10
+    max_per_season: 1
+
+  fishing:
+    enabled: true
+    min_duration_days: 1
+    max_duration_days: 2
+    base_chance_per_day: 0.10
+    max_per_year: 3
+    treasure_chance: 0.35          # mejor loot aun sin encantos
+    double_catch_chance: 0.30      # doble drop base
+
+  mining:
+    enabled: true
+    min_duration_days: 2
+    max_duration_days: 3
+    base_chance_per_day: 0.12
+    max_per_year: 3
+    extra_ore_chance: 0.35
+    exp_boost_chance: 0.40
+
+  tornado:
+    enabled: true
+    base_chance_per_day: 0.05
+    min_duration_days: 1
+    max_duration_days: 1
+    min_duration_minutes: 5
+    max_duration_minutes: 10
+
+    radius_blocks: 10.0
+    height_blocks: 24.0
+
+    # NUEVO: distancia donde spawnea respecto a los jugadores
+    min_spawn_distance: 20.0
+    max_spawn_distance: 24.0
+    # deriva básica
+    drift_speed: 0.18
+
+
+  restful_sleep:
+    enabled: true
+    min_duration_days: 2
+    max_duration_days: 4
+    base_chance_per_day: 0.10
+    health_boost_seconds: 600
+
+  holiday:
+    enabled: true
+
+    halloween:
+      mob_radius: 24.0
+      pumpkin_chance: 1.0
+      buff_chance: 0.8
+
+    christmas:
+      gift_radius: 8.0
+      heal_radius: 12.0
+      heal_amount: 0.5

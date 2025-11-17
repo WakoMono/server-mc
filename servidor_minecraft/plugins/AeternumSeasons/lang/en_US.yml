@@ -1,0 +1,636 @@
+season:
+  SPRING: Spring
+  SUMMER: Summer
+  AUTUMN: Autumn
+  WINTER: Winter
+hud:
+  title: "Day {day}, Year {year} — {season}"
+  title_dim: "Day {day}, Year {year} — {season} — {realm}"
+
+realm:
+  frost_overworld: "Snowbound Realm"
+  heat_overworld: "Emberbound Realm"
+
+  frost_title: "&b{name}"
+  frost_subtitle: "&7Only cold biomes"
+
+  heat_title: "&c{name}"
+  heat_subtitle: "&7Survive the burning lands"
+
+  overworld_title: "&aMain world"
+  returned_from: "&7You have left &f{name}"
+
+log:
+  frost_world_loaded: "&a[World] Snow world '{name}' was already loaded."
+  frost_world_created: "&a[World] Snow world '{name}' created and loaded successfully."
+  frost_world_failed: "&c[World] Failed to create snow world '{name}'."
+
+  heat_world_creating: "&6[World] Creating heat world '{name}'..."
+  heat_world_loaded: "&a[World] Heat world '{name}' was already loaded."
+  heat_world_created: "&a[World] Heat world '{name}' created and loaded."
+  heat_world_failed: "&c[World] Could not create heat world '{name}'."
+
+cmd:
+  event:
+    no_permission: "&cYou don't have permission to use this command."
+    usage: "&eUsage: {cmd} <list|info|start|stop> [id] [days]"
+    list:
+      header: "&6Registered events:"
+      item: "&7- &e{id}&7 (&f{name}&7)"
+    started: "&aEvent &e{id}&a forced to start."
+    stopped: "&cActive event stopped."
+    no_such_event: "&cNo event found with id &e{id}&c."
+    no_active: "&7There is no active event right now."
+    info: "&6Active event: &e{id}&7 (&f{name}&7), &e{days}&7 day(s) remaining."
+
+  season:
+    no_permission: "&cYou don't have permission to use this command."
+
+    info:
+      line: "&bSeason: {season}&7 | Day {day}/{max}&3 | Year {year}"
+
+    set:
+      usage: "&eUsage: /{label} set <SPRING|SUMMER|AUTUMN|WINTER>"
+      invalid: "&cInvalid season."
+      success: "&6Season set to {season}."
+
+    skipday:
+      done: "&6You have skipped 1 day."
+
+    day:
+      usage: "&eUsage: /{label} day <1..{max}>"
+      invalid_number: "&cInvalid number."
+      success: "&6Day set to {day} (current season)."
+
+    reload:
+      done: "&aConfigurations reloaded."
+
+    hud:
+      player_only: "&cThis command can only be used by a player."
+      usage: "&eUsage: /{label} hud <fixed|variable>"
+      current: "&7Current mode: &b{mode}"
+      invalid: "&cInvalid mode. Use: &efixed&c or &evariable&c."
+      mode:
+        fixed: "fixed"
+        variable: "variable"
+      set:
+        fixed: "&aStatic HUD display enabled."
+        variable: "&aVariable HUD mode enabled."
+
+    help: "&eUsage: /{label} <info|set|skipday|day|reload|hud>"
+
+event:
+  blood_moon:
+    title: "§4☾ Blood Moon ☾"
+    subtitle: "§cCreatures grow stronger and you cannot sleep..."
+    end: "&6The Blood Moon has faded..."
+    no_sleep: "&4You cannot sleep during a Blood Moon..."
+    mob_name: "Spawn of the Night"
+
+  heat_wave:
+    title: "§6☀ Heat Wave ☀"
+    subtitle: "&eThe sun burns harder, seek shade or protection."
+    end: "&aThe heat wave has ended, the weather feels gentler."
+
+  winter_freeze:
+    title: "§b❄ Cold Snap ❄"
+    subtitle: "§fWinter turns deadly if you are not protected."
+    end: "&bThe cold snap has passed, the air feels less cutting."
+    freezing: "&3You shiver... &byou need warmth or better gear."
+    cold_but_safe: "&7You feel the cold, but your protection keeps you safe."
+
+  magic_storm:
+    title: "§5⚡ Magic Storm ⚡"
+    subtitle: "&dThe sky cracks open and magic falls with the rain."
+    end: "&5The magic storm fades, leaving an eerie silence."
+    mob_name: "&bStorm-touched Creature"
+
+  festival:
+    end: "&6The festival ends, but the memories remain."
+    trader_name: "&eFestival Merchant"
+    item:
+      spring: "&aSpring Flower Pot"
+      summer: "&eSummer Honey Treat"
+      autumn: "&6Autumn Pumpkin Pie"
+      winter: "&bFestive Snowball"
+      generic: "&fFestival Souvenir"
+    spring:
+      title: "§a✿ Spring Festival ✿"
+      subtitle: "&fFlowers, music and new seeds of hope. Find a village"
+    summer:
+      title: "§e☀ Summer Festival ☀"
+      subtitle: "&fFood, laughter and warm nights. Find a village"
+    autumn:
+      title: "§6🍂 Autumn Festival 🍂"
+      subtitle: "&fHarvests, bonfires and stories by the fire. Find a village "
+    winter:
+      title: "§b❄ Winter Festival ❄"
+      subtitle: "&fLights, snow and the warmth of home. Find a village"
+
+  fishing:
+    title: "§b🎣 Fishing Festival 🎣"
+    subtitle: "&fRivers and seas hide extra treasures today."
+    end: "&bThe fishing festival has ended."
+
+  mining:
+    title: "§6⛏ Mining Blessing ⛏"
+    subtitle: "&fOre veins feel more generous..."
+    end: "&6The mining blessing fades away."
+
+  tornado:
+    title: "§7🌪 Tornado 🌪"
+    subtitle: "&fThe wind howls, seek shelter."
+    end: "&7The tornado slowly dissipates."
+
+  restful_sleep:
+    title: "§d😴 Restful Sleep 😴"
+    subtitle: "&fGood sleep will grant you extra strength."
+    end: "&dYour sleep returns to normal."
+    sleeping: "&dYou settle in for a deep, restorative sleep..."
+    buffed: "&dYou wake up refreshed, feeling extra vitality."
+    lost: "&cDamage has worn you down and you lose the restorative effect."
+
+  halloween:
+    title: "&6&lNight of &e&lPumpkins"
+    subtitle: "&7Monsters grow stronger and hunger for souls..."
+
+  christmas:
+    title: "&b&lChristmas in Aeternum"
+    subtitle: "&7The air feels warmer and gifts await..."
+    gift_found: "&aYou feel a gift sack has appeared in your inventory..."
+
+  holiday:
+    end: "&7The holiday celebrations have come to an end."
+
+
+guide:
+  title: "Aeternum Seasons Guide"
+
+  book_title: "Aeternum Seasons Guide"
+  book_author: "Aeternum"
+  book_given: "You have received the seasons guide."
+
+  current: "Current season: {season}"
+
+  intro: "This guide summarizes weather, events, crops and animal migration for each season."
+
+  section:
+    events: "Seasonal Events"
+    crops: "Crops by season"
+    migration: "Animal migration"
+    weather: "Typical weather"
+    crafting: "Special Crafting"
+    dimensions: "Dimensions"
+
+  crafting:
+    advanced_composter: |
+      §6Advanced Composter§7
+      §7Recipe:
+      §2[L] [H] [L]
+      §2[P] [C] [P]
+      §2[L] [H] [L]
+      
+      §1L = any leaf
+      §1H = hopper
+      §1P = pumpkin
+      §1C = composter
+
+    harvest_hoe: |
+      §6Harvest Hoe§7
+      §7Recipe:
+      §2[W] [W] [W]
+      §2[E] [H] [E]
+      §2[E] [E] [E]
+      
+      §1W = wheat
+      §1E = emerald
+      §1H = any hoe
+
+    farmer_boots: |
+      §6Farmer's Boots§7
+      §7Recipe:
+      §2[W] [B] [W]
+      §2[W] [S] [W]
+      §2[W] [W] [W]
+      
+      §1W = wheat
+      §1B = boots
+      §1S = shovel 
+
+    lunar_lantern: |
+      §6Lunar Lantern§7
+      §7Recipe:
+      §2[R] [L] [R]
+      §2[R] [E] [R]
+      §2[R] [L] [R]
+      
+      §1R = redstone
+      §1L = lantern
+      §1E = ender pearl
+
+    solar_torch: |
+      §6Solar Torch§7
+      §7Recipe:
+      §2[B] [B] [B]
+      §2[ ] [T] [ ]
+      §2[ ] [F] [ ]
+      
+      §1B = blaze powder
+      §1T = regular torch
+      §1F = golden item (solar talisman)
+
+    spring_bell: |
+      §dSpring Bell§7
+      §7Recipe:
+      §2[A] [P] [A]
+      §2[P] [B] [P]
+      §2[A] [P] [A]
+      
+      §1A = amethyst shard
+      §1P = petal / pink flower
+      §1B = bell
+
+    spring_boots: |
+      §dSpring Stride§7
+      §7Recipe:
+      §2[P] [P] [P]
+      §2[P] [B] [P]
+      §2[P] [P] [P]
+      
+      §1P = petal / pink flower
+      §1B = boots
+
+    snow_boots: |
+      §6Snowproof Boots§7
+      §7Recipe:
+      §2[ ] [B] [ ]
+      §2[ ] [S] [ ]
+      §2[ ] [S] [ ]
+      
+      §1B = boots
+      §1S = powdered snow bucket
+
+    natural_tree_axe: |
+      §6Natural Tree-Feller Axe§7
+      §7Recipe:
+      §2[L] [A] [L]
+      §2[O] [ ] [O]
+      §2[L] [ ] [L]
+      §1L = any leaves    
+      §1O = any log
+      §1A = any axe
+      
+    frost_core: |
+      §6Winter Core§7
+      §7Recipe:
+      §2[S] [I] [S]
+      §2[I] [B] [I]
+      §2[S] [I] [S]
+      §1S = Snow block
+      §1I = Packed Ice
+      §1B = Heart of the Sea
+      §7Right-click a Snow Golem to upgrade it.
+
+    guardian_core: |
+      §6Guardian Core§7
+      §7Recipe:
+      §2[I] [B] [I]
+      §2[B] [G] [B]
+      §2[I] [B] [I]
+      §1I = Iron block
+      §1B = Iron ingot
+      §1G = Amethyst shard
+      §7Right-click an Iron Golem.
+
+  dimensions:
+    snowbound:
+      title: "Snowbound Realm"
+      build: "Portal Construction:"
+      block: "Glowstone Block"
+      activate: "Ignite it by throwing a snowball beneath the portal."
+
+      warning_title: ""
+      warning_1: "During snowstorms your vision is heavily reduced."
+      warning_2: "Only a light source or a cave will let you see."
+      warning_3: "The cold intensifies, protect yourself well."
+
+    emberbound:
+      title: "Emberbound Realm Portal"
+      build_glitched: "Construc..."
+      block: "Nether W"
+      glitch_warning: "It seems the information about this world is corrupted..."
+
+  events:
+    blood_moon: "§cBlood Moon§7: monsters grow stronger and you cannot sleep."
+    heat_wave: "§6Heat Wave§7: the sun burns harder, watch your armor and health."
+    winter_freeze: "§9Cold Snap§7: winter can freeze you without proper protection."
+    magic_storm: "§9Magic Storms§7: unstable weather with rare mobs and enchanted loot."
+    festival: "§6Seasonal Festivals§7: special villagers, trades and ambience."
+    fishing: "§9Fishing Festival§7: better fishing rewards during special days."
+    mining: "§6Mining Blessing§7: more and better ores while the event is active."
+    tornado: "§7Tornadoes§7: dangerous phenomena that drag entities and harm crops."
+    restful_sleep: "§9Restful Sleep§7: good sleep can grant temporary extra max health."
+
+  crops:
+    SPRING: "Wheat, carrots, potatoes, beetroot and pumpkins thrive; a great all-around season."
+    SUMMER: "Melons, sugar cane, cactus and heat-tolerant crops grow best."
+    AUTUMN: "Pumpkins, mushrooms and root crops; perfect for big harvests and storage."
+    WINTER: "Almost nothing grows outdoors; greenhouses are required for farming."
+
+  migration:
+    SPRING: "More sheep, bees and rabbits in flowery plains and forests."
+    SUMMER: "More tropical fish, dolphins, turtles and axolotls in warm seas."
+    AUTUMN: "Foxes, wolves and goats move into taigas and mountain regions."
+    WINTER: "Wolves and polar bears dominate cold biomes; many warm-climate animals vanish."
+
+  weather:
+    SPRING: "Light rain, mild temperatures and longer days that help crops."
+    SUMMER: "Strong sun, high heat and some violent thunderstorms."
+    AUTUMN: "Cool winds, cloudy skies and sudden temperature shifts."
+    WINTER: "Frequent snow, extreme cold and risk of freezing if unprotected."
+
+  footer: "You can view this guide anytime with /season guide."
+
+item:
+  snow_step_boots:
+    name: "&bSnowstep Boots"
+    lore1: "&7Allows you to walk on &fPowder Snow"
+    lore2: "&7without sinking or getting stuck."
+
+  labrador_boots:
+    name: "&aLabrador Boots"
+    lore1: "&7You don't trample &6tilled soil&7 when jumping."
+    lore2: "&7You move faster on &6farmland&7."
+    lore3: "&7Sometimes grants &aextra seeds&7 when harvesting."
+
+  spring_stride_boots:
+    name: "&dSpring Stride"
+    lore1: "&7A lighter, &dblooming&7 leap."
+    lore2: "&7Upon landing, your step makes &fflowers&7 bloom."
+    lore3: "&7Perfect for exploring springtime meadows."
+
+  solar_torch:
+    name: "&eSolar Torch"
+    lore1: "&7A torch blessed by the &6sun&7."
+    lore2: "&7In summer, it speeds up crop growth."
+    lore3: "&7At night, it weakens nearby mobs."
+
+  advanced_composter:
+    name: "&6Advanced Composter"
+    lore1: "&7Processes compost &etwice as fast&7."
+    lore2: "&7Has a chance to yield &fextra bone meal&7."
+    lore3: "&7Works even better in &6autumn&7."
+
+  spring_bell:
+    name: "&dSpring Bell"
+    lore1: "&7When rung, it makes nearby crops bloom."
+    lore2: "&7Calms and blesses nearby &ebees&7."
+    lore3: "&7Its magic is stronger in &aspring&7."
+
+  lunar_lantern:
+    name: "&9Lunar Lantern"
+    lore1: "&7Glows with a &9bluish&7 light at night."
+    lore2: "&7Boosts growth of &3mushrooms&7 and dark plants."
+    lore3: "&7Adds a gentle &bnocturnal clarity&7 for travelers."
+
+  harvest_hoe:
+    name: "&6Harvest Hoe"
+    lore1: "&7Harvests crops &ein area&7, only when mature."
+    lore2: "&7Auto-replants using &fseeds&7 in inventory."
+    lore3: "&7Consumes durability per crop harvested."
+
+  natural_tree_axe:
+    name: "&2Natural Tree Axe"
+    lore1: "&7Fells & entire trees&7 with a single swing."
+    lore2: "&7Only affects connected logs, preserving the forest."
+    lore3: "&7Consumes durability per log chopped."
+
+  frost_core:
+    name: "&bWinter Core"
+    lore1: "&7Empowers a Snow Golem."
+    lore2: "&7Its power increases even more in winter."
+    lore3: "&eRight-click a Snow Golem."
+    lore4: "&aWinter:&7 more health and stronger snowballs."
+    lore5: "&7Does not leave snow on the ground and doesn’t die to weather."
+
+  guardian_core:
+    name: "&6Guardian Core"
+    lore1: "&7Imbues an Iron Golem"
+    lore2: "&7with power tied to the seasons."
+    lore3: "&eRight-click an Iron Golem."
+    lore4: "&aWinter:&7 much more health and damage."
+    lore5: "&eSummer:&7 immune to fire and burns enemies."
+
+  everfrost_shard:
+    name: "&bEverfrost Shard"
+    lore_line1: "&7A fragment of &bGlacialis&7' power."
+    lore_line2: "&7Used to forge armor that resists infernal heat."
+
+  glacialis_core:
+    name: "&3Glacialis Core"
+    lore_line1: "&7It pulses with unnatural cold."
+    lore_line2: "&7Key to forging armor against heat."
+
+  heat_armor:
+    helmet:
+      name: "&bEverfrost Helm"
+      lore_line1: "&7Forged with the power of &bGlacialis&7."
+      lore_line2: "&7Helps resist the infernal heat."
+    chest:
+      name: "&bEverfrost Chestplate"
+      lore_line1: "&7Eternal frost guards your heart."
+      lore_line2: "&7Helps resist the infernal heat."
+    legs:
+      name: "&bEverfrost Greaves"
+      lore_line1: "&7Let you stride across embers."
+      lore_line2: "&7Helps resist the infernal heat."
+    boots:
+      name: "&bEverfrost Boots"
+      lore_line1: "&7Leave footprints over lava."
+      lore_line2: "&7Helps resist the infernal heat."
+
+golem:
+  frostbound:
+    name: "&bWinterbound Golem"
+
+  guardian:
+    name: "&6Guardian Golem"
+
+  upgrade:
+    too_many: "&cThis chunk already has the maximum number of upgraded golems (&e{max}&c)."
+    frost_ok: "&bYour Snow Golem is now a &fWinterbound Golem&b."
+    guardian_ok: "&6Your Iron Golem is now a &fGuardian Golem&6."
+    wrong_target: "&7You can only use this core on an appropriate golem."
+
+boss:
+  glacialis:
+    name: "&bGlacialis, Heart of Winter"
+    spawn: "&b[Glacialis]&7 An ancient cold awakens in the &fFrozen World&7..."
+    defeated: "&b[Glacialis]&7 has been defeated. &7His frozen shards are scattered in the snow."
+
+frost_guide:
+  book_title: "Frozen World Guide"
+  book_author: "Cartographer of Aeternum Seasons"
+
+  page1: |
+    §9Everfrost Realm
+    §7You have crossed the glowstone portal and arrived
+    in a realm of endless winter.
+    
+    §1You can build your base, mine and explore,
+    §4but remember the enemies are stronger§7.
+    
+
+  page2: |
+    §9Dangers of the ice
+    
+    §7In the Everfrost Realm almost every enemy has
+    frozen variants.
+    
+    §4Keep moving and always carry
+    good armor and food.
+
+  page3: |
+    §9Glacialis, Heart of Winter
+    
+    §7This boss is the reason this dimension is
+    trapped in an eternal winter.
+    §4Glacialis appears at night in the Everfrost Realm,
+    every §628 days§7.
+    His loot is special for the Everfrost armor.
+
+  page4: |
+    §6Everfrost Helm
+    §7Recipe:
+    §2[S] [S] [S]
+    §2[S] [C] [S]
+    §2[ ] [H] [ ]
+    
+    §1S = Eternal Ice Shard
+    §1C = Glacialis Core
+    §1H = Diamond Helmet
+    
+    §7The Everfrost Helm is the first piece to
+    face the infernal heat.
+
+  page5: |
+    §6Everfrost Chestplate
+    §7Recipe:
+    §2[ ] [C] [ ]
+    §2[S] [A] [S]
+    §2[S] [ ] [S]
+    
+    §1S = Eternal Ice Shard
+    §1C = Glacialis Core
+    §1A = Diamond Chestplate
+    
+    §7The Everfrost Chestplate reinforces your body.
+
+  page6: |
+    §6Everfrost Greaves
+    §7Recipe:
+    §2[S] [C] [S]
+    §2[S] [A] [S]
+    §2[S] [A] [S]
+    
+    §1S = Eternal Ice Shard
+    §1C = Glacialis Core
+    §1A = Diamond Leggings
+    
+    §7They are meant for scorching terrain.
+
+  page7: |
+    §6Everfrost Boots
+    §7Recipe:
+    §2[ ] [C] [ ]
+    §2[S] [A] [S]
+    §2[S] [ ] [S]
+    
+    §1S = Eternal Ice Shard
+    §1C = Glacialis Core
+    §1A = Diamond Boots
+    
+    §7The boots are essential to
+    endure the heat.
+
+  page8: |
+    §4The next dimension
+    §7A forgotten world and §Devoured by the Nether§7 
+    that leads to a realm of infernal heat.
+    
+    §7There the enemies are even stronger, with
+    health and damage multiplied.
+    
+    §7With the full Everfrost set
+    you will be ready for the infernal flames.
+
+  page9: |
+    §4Emberbound Realm
+    §7Construction:
+    §2[W] [W] [W] [W]
+    §2[W] [ ] [ ]  [W]
+    §2[W] [ ] [ ]  [W]
+    §2[W] [ ] [ ]  [W]
+    §2[W] [W] [W] [W]
+    
+    §1W = Nether Wart Block
+    §1Light it with a flint and steel
+
+  page10: |
+    §4The Emberbound Realm
+    You can only reach this place with the Everfrost armor.
+    If you decide to enter without it, you will burn to death.
+
+guide_heat:
+  book_title: "Emberbound Survival Guide"
+  book_author: "Aeternum Archives"
+
+  page1: |
+    §4§lEMBERBOUND REALM
+    §cYou have crossed into the Emberbound Realm.
+
+    §6Here the air burns, the stone bleeds fire
+    and nothing wants you to stay alive.
+    §4This realm may be the end of your journey…
+    §c…or the place where you are reborn in flames.
+
+  page2: |
+    §6§lBASIC SURVIVAL
+
+    §8• §cThe constant heat §6will consume you
+    without proper protection.
+    §8• §6Never come without §afood§6, §ablocks §6and
+    §apotions §6ready.
+    §8• §cDo not come alone §6if you still don’t know
+    the secrets of this realm.
+
+  page3: |
+    §3§lWINTERFORGE ARMOR
+
+    §6Only the full §1Everfrost §6set can withstand
+    the extreme climate.
+    §cWithout the set§6, fire and lava
+    will melt you without mercy.
+    §1With it§6, you can walk through the flames
+    as if they were solid stone.
+
+  page4: |
+    §4§lCREATURES OF THE REALM
+
+    §8• §6Mobs here are approximately
+    §c4 times stronger.
+    §8• §6They have §cmore health§6, §cmore damage §6and almost
+    all of them deal §cfire damage§6.
+    §8• §6There are fiery variants.
+    §cif you underestimate them, you die.
+
+  page5: |
+    §6§lLOOT AND RISK
+
+    §8• §6Ruins and towers hide gear with
+    enchantments far above normal.
+    §8• §6It is the best loot in §5Aeternum§6
+    §aIf you’ve made it this far, you’ve already proved your courage.
+    §2Now prove you are capable
+    of returning alive.
+

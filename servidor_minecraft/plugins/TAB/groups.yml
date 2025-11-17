@@ -1,0 +1,26 @@
+owner:
+  tabprefix: "%animation:owner%&8&l・&f"
+  tagprefix: "%animation:owner%&8&l・&f"
+  belowname: ""
+dev:
+  tabprefix: "%animation:dev% &f"
+  tagprefix: "%animation:dev% &f"
+  belowname: ""
+admin:
+  tabprefix: "%animation:admin% &f"
+  tagprefix: "%animation:admin% &f"
+  belowname: ""
+mod:
+  tabprefix: "%animation:mod% &f"
+  tagprefix: "%animation:mod% &f"
+  belowname: ""
+helper:
+  tabprefix: "%animation:helper% &f"
+  tagprefix: "%animation:helper% &f"
+  belowname: ""
+
+_DEFAULT_:
+  tabprefix: "&7&lᴘʟᴀʏᴇʀ&8&l・&f"
+  tagprefix: "&7&lᴘʟᴀʏᴇʀ&8&l・&f"
+  belowname: ""
+

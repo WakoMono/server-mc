@@ -1,0 +1,49 @@
+# ╔════════════════════════════════════════════════════════════╗
+# ║                SGChat Plugin Messages                      ║
+# ╚════════════════════════════════════════════════════════════╝
+
+prefix: "&7[&dANOTHERSMP&7] "
+
+# ────────────────
+# Errors and permissions
+# ────────────────
+no-console: "&c❌ Only players can use this command."
+no-permission: "&c⛔ You don't have permission to use this command."
+
+# ────────────────
+# Command usage
+# ────────────────
+usage-msg: "&e✉ &7Usage: &b/msg <player> <message>"
+usage-r: "&e✉ &7Usage: &b/r <message>"
+
+# ────────────────
+# User messages
+# ────────────────
+player-not-found: "&c⚠ Player not found or offline."
+no-reply: "&c⚠ You have no one to reply to."
+reloaded: "&a✔ Configuration reloaded successfully."
+clear-success: "&b🧹 Chat has been cleared by &a{player}&b."
+clear-no-permission: "&c⛔ You don't have permission to clear the chat."
+
+# ────────────────
+# Anti-spam and mute
+# ────────────────
+spam-warning: "&6⏳ Don't send messages too quickly."
+duplicate-warning: "&6🔁 Don't repeat the same message."
+blocked-message: "&c🚫 Your message contains forbidden words."
+warning-message: "&e⚠ Warning: Don't use forbidden words. (&c{current}&7/&c{max}&e)"
+warning-mute-message: "&c🔇 You have been temporarily muted for using forbidden words."
+mute-message: "&c🔇 You can't speak, you are muted."
+mute-expire-message: "&a🔊 You can speak again."
+
+# ────────────────
+# Custom mute
+# ────────────────
+mute-staff-message: "&e🔇 {player} has been muted. &7Time: &b{time} &7Reason: &c{reason}"
+mute-user-message: "&c🔇 You have been muted from chat. &7Time: &b{time} &7Reason: &c{reason}"
+
+# ────────────────
+# Custom unmute
+# ────────────────
+unmute-staff-message: "&a🔊 Player unmuted: &b{player}"
+unmute-user-message: "&a🔊 You have been unmuted from chat, {player}!"

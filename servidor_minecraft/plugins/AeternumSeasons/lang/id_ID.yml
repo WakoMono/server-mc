@@ -1,0 +1,635 @@
+season:
+  SPRING: "Musim Semi"
+  SUMMER: "Musim Panas"
+  AUTUMN: "Musim Gugur"
+  WINTER: "Musim Dingin"
+
+hud:
+  title: "Hari {day}, Tahun {year} — {season}"
+  title_dim: "Hari {day}, Tahun {year} — {season} — {realm}"
+
+realm:
+  frost_overworld: "Snowbound Realm"
+  heat_overworld: "Emberbound Realm"
+
+  frost_title: "&b{name}"
+  frost_subtitle: "&7Hanya bioma dingin"
+
+  heat_title: "&c{name}"
+  heat_subtitle: "&7Bertahanlah di tanah yang membara"
+
+  overworld_title: "&aDunia utama"
+  returned_from: "&7Kamu telah meninggalkan &f{name}"
+
+log:
+  frost_world_loaded: "&a[World] Dunia salju '{name}' sudah dimuat."
+  frost_world_created: "&a[World] Dunia salju '{name}' berhasil dibuat dan dimuat."
+  frost_world_failed: "&c[World] Gagal membuat dunia salju '{name}'."
+
+  heat_world_creating: "&6[World] Membuat dunia panas '{name}'..."
+  heat_world_loaded: "&a[World] Dunia panas '{name}' sudah dimuat."
+  heat_world_created: "&a[World] Dunia panas '{name}' berhasil dibuat dan dimuat."
+  heat_world_failed: "&c[World] Tidak dapat membuat dunia panas '{name}'."
+
+cmd:
+  event:
+    no_permission: "&cKamu tidak punya izin untuk menggunakan perintah ini."
+    usage: "&ePemakaian: {cmd} <list|info|start|stop> [id] [hari]"
+    list:
+      header: "&6Event yang terdaftar:"
+      item: "&7- &e{id}&7 (&f{name}&7)"
+    started: "&aEvent &e{id}&a dipaksa untuk dimulai."
+    stopped: "&cEvent aktif telah dihentikan."
+    no_such_event: "&cTidak ada event dengan id &e{id}&c."
+    no_active: "&7Saat ini tidak ada event yang aktif."
+    info: "&6Event aktif: &e{id}&7 (&f{name}&7), tersisa &e{days}&7 hari."
+
+  season:
+    no_permission: "&cKamu tidak punya izin untuk menggunakan perintah ini."
+
+    info:
+      line: "&bMusim: {season}&7 | Hari {day}/{max}&3 | Tahun {year}"
+
+    set:
+      usage: "&ePemakaian: /{label} set <SPRING|SUMMER|AUTUMN|WINTER>"
+      invalid: "&cMusim tidak valid."
+      success: "&6Musim diatur menjadi {season}."
+
+    skipday:
+      done: "&6Kamu telah melewati 1 hari."
+
+    day:
+      usage: "&ePemakaian: /{label} day <1..{max}>"
+      invalid_number: "&cAngka tidak valid."
+      success: "&6Hari diatur ke {day} (musim saat ini)."
+
+    reload:
+      done: "&aKonfigurasi telah dimuat ulang."
+
+    hud:
+      player_only: "&cPerintah ini hanya bisa digunakan oleh pemain."
+      usage: "&ePemakaian: /{label} hud <fixed|variable>"
+      current: "&7Mode saat ini: &b{mode}"
+      invalid: "&cMode tidak valid. Gunakan: &efixed&c atau &evariable&c."
+      mode:
+        fixed: "fixed"
+        variable: "variable"
+      set:
+        fixed: "&aTampilan HUD statis diaktifkan."
+        variable: "&aMode HUD variabel diaktifkan."
+
+    help: "&ePemakaian: /{label} <info|set|skipday|day|reload|hud>"
+
+event:
+  blood_moon:
+    title: "§4☾ Bulan Darah ☾"
+    subtitle: "§cMakhluk menjadi lebih kuat dan kamu tidak bisa tidur..."
+    end: "&6Bulan Darah telah menghilang..."
+    no_sleep: "&4Kamu tidak bisa tidur selama Bulan Darah..."
+    mob_name: "Keturan Malam"
+
+  heat_wave:
+    title: "§6☀ Gelombang Panas ☀"
+    subtitle: "&eMatahari menyengat lebih keras, carilah tempat teduh atau perlindungan."
+    end: "&aGelombang panas telah berakhir, cuaca terasa lebih lembut."
+
+  winter_freeze:
+    title: "§b❄ Hembusan Dingin ❄"
+    subtitle: "§fMusim dingin menjadi mematikan jika kamu tidak terlindungi."
+    end: "&bHembusan dingin telah berlalu, udara terasa tidak terlalu menusuk."
+    freezing: "&3Kamu menggigil... &bkamu butuh kehangatan atau perlengkapan yang lebih baik."
+    cold_but_safe: "&7Kamu merasakan dingin, tapi perlindunganmu menjagamu tetap aman."
+
+  magic_storm:
+    title: "&5⚡ Badai Magis ⚡"
+    subtitle: "&dLangit terbelah dan sihir jatuh bersama hujan."
+    end: "&5Badai magis memudar, menyisakan keheningan yang aneh."
+    mob_name: "&bMakhluk Tersentuh Badai"
+
+  festival:
+    end: "&6Festival berakhir, tapi kenangannya tetap ada."
+    trader_name: "&ePedagang Festival"
+    item:
+      spring: "&aPot Bunga Musim Semi"
+      summer: "&eCamilan Madu Musim Panas"
+      autumn: "&6Pai Labu Musim Gugur"
+      winter: "&bBola Salju Meriah"
+      generic: "&fSuvenir Festival"
+    spring:
+      title: "§a✿ Festival Musim Semi ✿"
+      subtitle: "&fBunga, musik, dan benih harapan baru. Temukan sebuah desa"
+    summer:
+      title: "§e☀ Festival Musim Panas ☀"
+      subtitle: "&fMakanan, tawa, dan malam yang hangat. Temukan sebuah desa"
+    autumn:
+      title: "§6🍂 Festival Musim Gugur 🍂"
+      subtitle: "&fPanen, api unggun, dan cerita di sekitar api. Temukan sebuah desa"
+    winter:
+      title: "§b❄ Festival Musim Dingin ❄"
+      subtitle: "&fLampu, salju, dan kehangatan rumah. Temukan sebuah desa"
+
+  fishing:
+    title: "§b🎣 Festival Memancing 🎣"
+    subtitle: "&fSungai dan laut menyimpan harta ekstra hari ini."
+    end: "&bFestival memancing telah berakhir."
+
+  mining:
+    title: "§6⛏ Berkah Penambangan ⛏"
+    subtitle: "&fUrat bijih terasa lebih dermawan..."
+    end: "&6Berkah penambangan memudar."
+
+  tornado:
+    title: "§7🌪 Tornado 🌪"
+    subtitle: "&fAngin meraung, carilah perlindungan."
+    end: "&7Tornado perlahan menghilang."
+
+  restful_sleep:
+    title: "§d😴 Tidur Nyenyak 😴"
+    subtitle: "&fTidur yang baik akan memberimu kekuatan ekstra."
+    end: "&dTidurmu kembali normal."
+    sleeping: "&dKamu bersiap untuk tidur dalam, yang memulihkan..."
+    buffed: "&dKamu bangun dengan segar, merasakan vitalitas ekstra."
+    lost: "&cKerusakan telah mengikismu dan kamu kehilangan efek pemulihan."
+
+  halloween:
+    title: "&6&lMalam &e&lLabu"
+    subtitle: "&7Monster menjadi lebih kuat dan haus akan jiwa..."
+
+  christmas:
+    title: "&b&lNatal di Aeternum"
+    subtitle: "&7Udara terasa lebih hangat dan hadiah menantimu..."
+    gift_found: "&aKamu merasa ada kantong hadiah yang muncul di inventarismu..."
+
+  holiday:
+    end: "&7Perayaan hari raya telah berakhir."
+
+guide:
+  title: "Panduan Musim Aeternum"
+
+  book_title: "Panduan Musim Aeternum"
+  book_author: "Aeternum"
+  book_given: "Kamu telah menerima panduan musim."
+
+  current: "Musim saat ini: {season}"
+
+  intro: "Panduan ini merangkum cuaca, event, tanaman, dan migrasi hewan untuk setiap musim."
+
+  section:
+    events: "Event Musiman"
+    crops: "Tanaman per musim"
+    migration: "Migrasi hewan"
+    weather: "Cuaca khas"
+    crafting: "Crafting Khusus"
+    dimensions: "Dimensi"
+
+  crafting:
+    advanced_composter: |
+      §6Advanced Composter§7
+      §7Resep:
+      §2[L] [H] [L]
+      §2[P] [C] [P]
+      §2[L] [H] [L]
+      
+      §1L = daun apa saja
+      §1H = corong
+      §1P = labu           
+      §1C = komposter
+
+    harvest_hoe: |
+      §6Harvest Hoe§7
+      §7Resep:
+      §2[W] [W] [W]
+      §2[E] [H] [E]
+      §2[E] [E] [E]
+      
+      §1W = gandum
+      §1E = zamrud
+      §1H = cangkul apa saja
+
+    farmer_boots: |
+      §6Farmer's Boots§7
+      §7Resep:
+      §2[W] [B] [W]
+      §2[W] [S] [W]
+      §2[W] [W] [W]
+      
+      §1W = gandum
+      §1B = sepatu
+      §1S = sekop 
+
+    lunar_lantern: |
+      §6Lunar Lantern§7
+      §7Resep:
+      §2[R] [L] [R]
+      §2[R] [E] [R]
+      §2[R] [L] [R]
+      
+      §1R = redstone
+      §1L = lentera
+      §1E = ender pearl
+
+    solar_torch: |
+      §6Solar Torch§7
+      §7Resep:
+      §2[B] [B] [B]
+      §2[ ] [T] [ ]
+      §2[ ] [F] [ ]
+      
+      §1B = bubuk blaze
+      §1T = obor biasa
+      §1F = item emas (jimat matahari)
+
+    spring_bell: |
+      §dSpring Bell§7
+      §7Resep:
+      §2[A] [P] [A]
+      §2[P] [B] [P]
+      §2[A] [P] [A]
+      
+      §1A = pecahan amethyst
+      §1P = kelopak / bunga merah muda
+      §1B = lonceng
+
+    spring_boots: |
+      §dSpring Stride§7
+      §7Resep:
+      §2[P] [P] [P]
+      §2[P] [B] [P]
+      §2[P] [P] [P]
+      
+      §1P = kelopak / bunga merah muda
+      §1B = sepatu
+
+    snow_boots: |
+      §6Snowproof Boots§7
+      §7Resep:
+      §2[ ] [B] [ ]
+      §2[ ] [S] [ ]
+      §2[ ] [S] [ ]
+      
+      §1B = sepatu
+      §1S = ember salju bubuk
+
+    natural_tree_axe: |
+      §6Natural Tree-Feller Axe§7
+      §7Resep:
+      §2[L] [A] [L]
+      §2[O] [ ] [O]
+      §2[L] [ ] [L]
+      §1L = daun apa saja    
+      §1O = gelondongan apa saja
+      §1A = kapak apa saja
+
+    frost_core: |
+      §6Winter Core§7
+      §7Resep:
+      §2[S] [I] [S]
+      §2[I] [B] [I]
+      §2[S] [I] [S]
+      §1S = blok salju
+      §1I = es padat
+      §1B = Heart of the Sea
+      §7Klik kanan Snow Golem untuk meningkatkannya.
+
+    guardian_core: |
+      §6Guardian Core§7
+      §7Resep:
+      §2[I] [B] [I]
+      §2[B] [G] [B]
+      §2[I] [B] [I]
+      §1I = blok besi
+      §1B = ingot besi
+      §1G = pecahan amethyst
+      §7Klik kanan Iron Golem.
+
+  dimensions:
+    snowbound:
+      title: "Snowbound Realm"
+      build: "Konstruksi Portal:"
+      block: "Blok Glowstone"
+      activate: "Aktifkan dengan melempar bola salju di bawah portal."
+
+      warning_title: ""
+      warning_1: "Saat badai salju, jarak pandangmu sangat berkurang."
+      warning_2: "Hanya sumber cahaya atau berada di dalam gua yang membuatmu bisa melihat."
+      warning_3: "Dingin makin parah, lindungi dirimu baik-baik."
+
+    emberbound:
+      title: "Emberbound Realm Portal"
+      build_glitched: "Construc..."
+      block: "Nether W"
+      glitch_warning: "Sepertinya informasi tentang dunia ini rusak..."
+
+  events:
+    blood_moon: "§cBlood Moon§7: monster menjadi lebih kuat dan kamu tidak bisa tidur."
+    heat_wave: "§6Heat Wave§7: matahari menyengat lebih keras, perhatikan armor dan kesehatanmu."
+    winter_freeze: "§9Cold Snap§7: musim dingin bisa membekukanmu tanpa perlindungan yang layak."
+    magic_storm: "§9Magic Storms§7: cuaca tak stabil dengan mob langka dan loot terkutuk."
+    festival: "§6Seasonal Festivals§7: villager khusus, trade unik, dan suasana meriah."
+    fishing: "§9Fishing Festival§7: hadiah memancing lebih baik selama hari-hari khusus."
+    mining: "§6Mining Blessing§7: lebih banyak dan lebih baik bijih selama event aktif."
+    tornado: "§7Tornadoes§7: fenomena berbahaya yang menyeret entitas dan merusak tanaman."
+    restful_sleep: "§9Restful Sleep§7: tidur yang baik dapat memberi tambahan maksimal HP sementara."
+
+  crops:
+    SPRING: "Gandum, wortel, kentang, bit, dan labu tumbuh subur; musim serba guna yang hebat."
+    SUMMER: "Semangka, tebu, kaktus, dan tanaman tahan panas tumbuh paling baik."
+    AUTUMN: "Labu, jamur, dan umbi-umbian; sempurna untuk panen besar dan penyimpanan."
+    WINTER: "Hampir tidak ada yang tumbuh di luar; rumah kaca dibutuhkan untuk bertani."
+
+  migration:
+    SPRING: "Lebih banyak domba, lebah, dan kelinci di padang bunga dan hutan."
+    SUMMER: "Lebih banyak ikan tropis, lumba-lumba, kura-kura, dan axolotl di laut hangat."
+    AUTUMN: "Rubah, serigala, dan kambing pindah ke taiga dan pegunungan."
+    WINTER: "Serigala dan beruang kutub mendominasi bioma dingin; banyak hewan iklim hangat menghilang."
+
+  weather:
+    SPRING: "Hujan ringan, suhu sejuk, dan hari yang lebih panjang membantu tanaman."
+    SUMMER: "Matahari terik, panas tinggi, dan beberapa badai petir yang hebat."
+    AUTUMN: "Angin sejuk, langit berawan, dan perubahan suhu yang tiba-tiba."
+    WINTER: "Sering turun salju, dingin ekstrem, dan risiko membeku jika tidak terlindungi."
+
+  footer: "Kamu bisa melihat panduan ini kapan saja dengan /season guide."
+
+item:
+  snow_step_boots:
+    name: "&bSnowstep Boots"
+    lore1: "&7Memungkinkanmu berjalan di &fPowdered Snow"
+    lore2: "&7tanpa tenggelam atau terjebak."
+
+  labrador_boots:
+    name: "&aLabrador Boots"
+    lore1: "&7Kamu tidak menginjak &6tanah yang dicangkul&7 saat melompat."
+    lore2: "&7Kamu bergerak lebih cepat di &6farmland&7."
+    lore3: "&7Kadang memberi &abibit ekstra&7 saat panen."
+
+  spring_stride_boots:
+    name: "&dSpring Stride"
+    lore1: "&7Lompatan yang ringan dan &dbersemi&7."
+    lore2: "&7Saat mendarat, langkahmu membuat &fbunga&7 bermekaran."
+    lore3: "&7Sempurna untuk menjelajahi padang musim semi."
+
+  solar_torch:
+    name: "&eSolar Torch"
+    lore1: "&7Obor yang diberkati oleh &6matahari&7."
+    lore2: "&7Di musim panas, mempercepat pertumbuhan tanaman."
+    lore3: "&7Di malam hari, melemahkan mob di sekitarnya."
+
+  advanced_composter:
+    name: "&6Advanced Composter"
+    lore1: "&7Memproses kompos &edua kali lebih cepat&7."
+    lore2: "&7Memiliki peluang menghasilkan &fbone meal ekstra&7."
+    lore3: "&7Bekerja lebih baik di &6musim gugur&7."
+
+  spring_bell:
+    name: "&dSpring Bell"
+    lore1: "&7Saat dibunyikan, membuat tanaman di sekitar bermekaran."
+    lore2: "&7Menenangkan dan memberkati &elebah&7 di sekitar."
+    lore3: "&7Magisnya lebih kuat di &amusim semi&7."
+
+  lunar_lantern:
+    name: "&9Lunar Lantern"
+    lore1: "&7Bersinar dengan cahaya &9kebiruan&7 di malam hari."
+    lore2: "&7Meningkatkan pertumbuhan &3jamur&7 dan tanaman gelap."
+    lore3: "&7Memberi &bkecerahan malam&7 yang lembut bagi para pengelana."
+
+  harvest_hoe:
+    name: "&6Harvest Hoe"
+    lore1: "&7Memanen tanaman &edi area&7, hanya saat sudah matang."
+    lore2: "&7Otomatis menanam kembali menggunakan &fbibit&7 di inventaris."
+    lore3: "&7Menghabiskan durabilitas per tanaman yang dipanen."
+
+  natural_tree_axe:
+    name: "&2Natural Tree Axe"
+    lore1: "&7Menebang seluruh pohon&7 dengan satu ayunan."
+    lore2: "&7Hanya memengaruhi gelondongan yang terhubung, menjaga hutan."
+    lore3: "&7Menghabiskan durabilitas per gelondongan yang dipotong."
+
+  frost_core:
+    name: "&bWinter Core"
+    lore1: "&7Memperkuat Snow Golem."
+    lore2: "&7Kekuatannya meningkat lebih jauh di musim dingin."
+    lore3: "&eKlik kanan Snow Golem."
+    lore4: "&aMusim Dingin:&7 lebih banyak HP dan bola salju yang lebih kuat."
+    lore5: "&7Tidak meninggalkan salju di tanah dan tidak mati karena cuaca."
+
+  guardian_core:
+    name: "&6Guardian Core"
+    lore1: "&7Mengisi Iron Golem"
+    lore2: "&7dengan kekuatan yang terikat pada musim."
+    lore3: "&eKlik kanan Iron Golem."
+    lore4: "&aMusim Dingin:&7 jauh lebih banyak HP dan damage."
+    lore5: "&eMusim Panas:&7 kebal api dan membakar musuh."
+
+  everfrost_shard:
+    name: "&bEverfrost Shard"
+    lore_line1: "&7Sebuah pecahan dari kekuatan &bGlacialis&7."
+    lore_line2: "&7Digunakan untuk menempa armor yang tahan panas neraka."
+
+  glacialis_core:
+    name: "&3Glacialis Core"
+    lore_line1: "&7Berdenyut dengan dingin yang tidak wajar."
+    lore_line2: "&7Kunci untuk menempa armor anti-panas."
+
+  heat_armor:
+    helmet:
+      name: "&bEverfrost Helm"
+      lore_line1: "&7Ditempa dengan kekuatan &bGlacialis&7."
+      lore_line2: "&7Membantu menahan panas neraka."
+    chest:
+      name: "&bEverfrost Chestplate"
+      lore_line1: "&7Salju abadi menjaga hatimu."
+      lore_line2: "&7Membantu menahan panas neraka."
+    legs:
+      name: "&bEverfrost Greaves"
+      lore_line1: "&7Memungkinkanmu melangkah di atas bara."
+      lore_line2: "&7Membantu menahan panas neraka."
+    boots:
+      name: "&bEverfrost Boots"
+      lore_line1: "&7Meninggalkan jejak di atas lava."
+      lore_line2: "&7Membantu menahan panas neraka."
+
+golem:
+  frostbound:
+    name: "&bWinterbound Golem"
+
+  guardian:
+    name: "&6Guardian Golem"
+
+  upgrade:
+    too_many: "&cChunk ini sudah memiliki jumlah maksimal golem yang ditingkatkan (&e{max}&c)."
+    frost_ok: "&bSnow Golem-mu kini menjadi &fWinterbound Golem&b."
+    guardian_ok: "&6Iron Golem-mu kini menjadi &fGuardian Golem&6."
+    wrong_target: "&7Kamu hanya bisa menggunakan core ini pada golem yang tepat."
+
+boss:
+  glacialis:
+    name: "&bGlacialis, Heart of Winter"
+    spawn: "&b[Glacialis]&7 Dingin purba terbangun di &fFrozen World&7..."
+    defeated: "&b[Glacialis]&7 telah dikalahkan. &7Pecahan bekunya tersebar di salju."
+
+frost_guide:
+  book_title: "Frozen World Guide"
+  book_author: "Kartografer Aeternum Seasons"
+
+  page1: |
+    §9Everfrost Realm
+    §7Kamu telah menyeberangi portal glowstone dan tiba
+    di dunia musim dingin yang tak berujung.
+    
+    §1Kamu bisa membangun markas, menambang, dan menjelajah,
+    §4tetapi ingat musuh di sini lebih kuat§7.
+  
+
+  page2: |
+    §9Bahaya es
+    
+    §7Di Everfrost Realm hampir setiap musuh memiliki
+    varian beku.
+    
+    §4Teruslah bergerak dan selalu bawa
+    armor dan makanan yang baik.
+
+  page3: |
+    §9Glacialis, Heart of Winter
+    
+    §7Boss ini adalah alasan dimensi ini
+    terjebak dalam musim dingin abadi.
+    §4Glacialis muncul di malam hari di Everfrost Realm,
+    setiap §628 hari§7.
+    Loot-nya khusus untuk armor Everfrost.
+
+  page4: |
+    §6Everfrost Helm
+    §7Resep:
+    §2[S] [S] [S]
+    §2[S] [C] [S]
+    §2[ ] [H] [ ]
+    
+    §1S = Everfrost Shard
+    §1C = Glacialis Core
+    §1H = Diamond Helmet
+    
+    §7Everfrost Helm adalah bagian pertama untuk
+    menghadapi panas neraka.
+
+  page5: |
+    §6Everfrost Chestplate
+    §7Resep:
+    §2[ ] [C] [ ]
+    §2[S] [A] [S]
+    §2[S] [ ] [S]
+    
+    §1S = Everfrost Shard
+    §1C = Glacialis Core
+    §1A = Diamond Chestplate
+    
+    §7Everfrost Chestplate memperkuat tubuhmu.
+
+  page6: |
+    §6Everfrost Greaves
+    §7Resep:
+    §2[S] [C] [S]
+    §2[S] [A] [S]
+    §2[S] [A] [S]
+    
+    §1S = Everfrost Shard
+    §1C = Glacialis Core
+    §1A = Diamond Leggings
+    
+    §7Mereka dibuat untuk tanah yang membara.
+
+  page7: |
+    §6Everfrost Boots
+    §7Resep:
+    §2[ ] [C] [ ]
+    §2[S] [A] [S]
+    §2[S] [ ] [S]
+    
+    §1S = Everfrost Shard
+    §1C = Glacialis Core
+    §1A = Diamond Boots
+    
+    §7Boots ini penting untuk
+    bertahan di panas.
+
+  page8: |
+    §4Dimensi berikutnya
+    §7Dunia yang terlupakan dan §Dimakan oleh Nether§7
+    yang mengarah ke dunia panas neraka.
+    
+    §7Di sana musuh-musuh bahkan lebih kuat, dengan
+    HP dan damage yang berlipat ganda.
+    
+    §7Dengan set Everfrost lengkap
+    kamu siap untuk api neraka.
+
+  page9: |
+    §4Emberbound Realm
+    §7Konstruksi:
+    §2[W] [W] [W] [W]
+    §2[W] [ ] [ ]  [W]
+    §2[W] [ ] [ ]  [W]
+    §2[W] [ ] [ ]  [W]
+    §2[W] [W] [W] [W]
+    
+    §1W = Nether Wart Block
+    §1Nyalakan dengan flint and steel
+
+  page10: |
+    §4Emberbound Realm
+    Kamu hanya bisa mencapai tempat ini dengan armor Everfrost.
+    Jika kamu memutuskan masuk tanpa itu, kamu akan terbakar sampai mati.
+
+guide_heat:
+  book_title: "Emberbound Survival Guide"
+  book_author: "Aeternum Archives"
+
+  page1: |
+    §4§lEMBERBOUND REALM
+    §cKamu telah menyeberang ke Emberbound Realm.
+
+    §6Di sini udara membakar, batu mengalirkan api
+    dan tidak ada yang ingin kamu tetap hidup.
+    §4Dunia ini bisa menjadi akhir perjalananmu…
+    §c…atau tempat di mana kamu terlahir kembali dalam api.
+
+  page2: |
+    §6§lBERTAHAN HIDUP DASAR
+
+    §8• §cPanas yang terus-menerus §6akan menghabisimu
+    tanpa perlindungan yang tepat.
+    §8• §6Jangan pernah datang tanpa §amakanan§6, §ablok §6dan
+    §apotion §6yang siap.
+    §8• §cJangan datang sendirian §6jika kamu belum mengenal
+    rahasia dunia ini.
+
+  page3: |
+    §3§lARMOR WINTERFORGE
+
+    §6Hanya set §1Everfrost §6lengkap yang mampu menahan
+    iklim ekstrem.
+    §cTanpa set tersebut§6, api dan lava
+    akan melelehkanmu tanpa ampun.
+    §1Dengan itu§6, kamu bisa berjalan di tengah api
+    seolah itu batu biasa.
+
+  page4: |
+    §4§lMAKHLUK DI DUNIA INI
+
+    §8• §6Mob di sini kurang lebih
+    §c4 kali lebih kuat.
+    §8• §6Mereka punya §clebih banyak HP§6, §cdamage lebih besar §6dan hampir
+    semuanya memberi §cdamage api§6.
+    §8• §6Ada varian berapi.
+    §cjika kamu meremehkan mereka, kamu mati.
+
+  page5: |
+    §6§lLOOT DAN RISIKO
+
+    §8• §6Reruntuhan dan menara menyembunyikan gear
+    dengan enchant di atas normal.
+    §8• §6Ini adalah loot terbaik di §5Aeternum§6
+    §aJika kamu sudah sampai sejauh ini, kamu sudah membuktikan keberanianmu.
+    §2Sekarang buktikan bahwa kamu mampu
+    kembali dengan selamat.

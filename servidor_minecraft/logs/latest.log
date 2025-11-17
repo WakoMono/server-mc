@@ -1,0 +1,449 @@
+[01:03:36] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1; Ubuntu null) on Linux 6.8.0-1030-azure (amd64)
+[01:03:36] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21-130-master@b1b5d4c (2024-08-10T10:02:42Z) for Minecraft 1.21
+[01:03:37] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[01:03:44] [ServerMain/INFO]: [PluginInitializerManager] Initialized 21 plugins
+[01:03:44] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (21):
+ - AeternumSeasons (1.2), AlixSystem (3.7.0), BetterStructures (2.0.4), BuffedItems (1.1.1), DecentHolograms (2.9.8), DiscordSRV (1.30.1), ItemEditor (2.1.0), LibsDisguises (11.0.13), LuckPerms (5.5.0), MonlyTPA (1.0.0), PlaceholderAPI (2.11.7), ProtocolLib (5.4.1-SNAPSHOT-468082c), SGChat (1.0.4), SMP (1.9), Shopkeepers (2.24.0), SkinsRestorer (15.9.0), Staff (1.0), TAB (5.3.2), UpgradeableSpawners (4.15.16), WorldEdit (7.3.9+6959-7adf70b), packetevents (2.10.1)
+[01:03:48] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[01:03:50] [ServerMain/INFO]: Loaded 1290 recipes
+[01:03:51] [ServerMain/INFO]: Loaded 1399 advancements
+[01:03:51] [Server thread/INFO]: Starting minecraft server version 1.21
+[01:03:51] [Server thread/INFO]: Loading properties
+[01:03:51] [Server thread/INFO]: This server is running Paper version 1.21-130-master@b1b5d4c (2024-08-10T10:02:42Z) (Implementing API version 1.21-R0.1-SNAPSHOT)
+[01:03:52] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[01:03:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:03:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:03:53] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[01:03:53] [Server thread/INFO]: Default game type: SURVIVAL
+[01:03:53] [Server thread/INFO]: Generating keypair
+[01:03:53] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:03:53] [Server thread/INFO]: Using epoll channel type
+[01:03:53] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[01:03:53] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[01:03:54] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loading 4 libraries... please wait
+[01:03:54] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar
+[01:03:54] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar
+[01:03:54] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/org/slf4j/slf4j-jdk14/1.7.32/slf4j-jdk14-1.7.32.jar
+[01:03:54] [Server thread/INFO]: [SpigotLibraryLoader] [UpgradeableSpawners] Loaded library /workspaces/server-mc/servidor_minecraft/libraries/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar
+[01:03:58] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.1-SNAPSHOT-468082c
+[01:03:58] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.7
+[01:03:58] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
+[01:04:00] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[01:04:01] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
+[01:04:01] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.9+6959-7adf70b
+[01:04:02] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7a2e1048]
+[01:04:02] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.13
+[01:04:04] [Server thread/INFO]: [UpgradeableSpawners] Loading server plugin UpgradeableSpawners v4.15.16
+[01:04:05] [Server thread/WARN]: [UpgradeableSpawners] [GUI] Invalid sound option: ENTITY_VILLAGER_NO Option: failure - You can find the correct sound names by using the /playsound command ingame. This is not a plugin issue. You need to edit the file en-US_gui.yml.
+[01:04:05] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[01:04:05] [Server thread/INFO]: [BuffedItems] Loading server plugin BuffedItems v1.1.1
+[01:04:05] [Server thread/INFO]: [DecentHolograms] Loading server plugin DecentHolograms v2.9.8
+[01:04:05] [Server thread/INFO]: [MonlyTPA] Loading server plugin MonlyTPA v1.0.0
+[01:04:05] [Server thread/INFO]: [Staff] Loading server plugin Staff v1.0
+[01:04:05] [Server thread/INFO]: [AlixSystem] Loading server plugin AlixSystem v3.7.0
+[01:04:05] [Server thread/INFO]: [AlixSystem] Successfully loaded the plugin from an external loader.
+[01:04:07] [Server thread/INFO]: [SMP] Loading server plugin SMP v1.9
+[01:04:07] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.24.0
+[01:04:07] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (909 ms).
+[01:04:07] [Server thread/INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R1
+[01:04:07] [Server thread/INFO]: [Shopkeepers] Loading config.
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': COPPER_GOLEM
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': CREAKING
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HAPPY_GHAST
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': MANNEQUIN
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[01:04:08] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': COPPER_GOLEM
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': CREAKING
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HAPPY_GHAST
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': MANNEQUIN
+[01:04:08] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[01:04:08] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[01:04:08] [Server thread/INFO]: [ItemEditor] Loading server plugin ItemEditor v2.1.0
+[01:04:08] [Server thread/INFO]: [ItemEditor] Detected Minecraft version 1.21.0
+[01:04:08] [Server thread/INFO]: [SGChat] Loading server plugin SGChat v1.0.4
+[01:04:08] [Server thread/INFO]: [BetterStructures] Loading server plugin BetterStructures v2.0.4
+[01:04:08] [Server thread/INFO]: [BetterStructures] MagmaCore v1.13-SNAPSHOT initialized!
+[01:04:08] [Server thread/INFO]: [BetterStructures] Registered /logify command
+[01:04:08] [Server thread/INFO]: [BetterStructures] WorldGuard is not enabled! WorldGuard is recommended when using the EliteMobs integration.
+[01:04:08] [Server thread/INFO]: [DiscordSRV] Loading server plugin DiscordSRV v1.30.1
+[01:04:08] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.3.2
+[01:04:08] [Server thread/INFO]: [AeternumSeasons] Loading server plugin AeternumSeasons v1.2
+[01:04:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:04:08] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.1-SNAPSHOT-468082c
+[01:04:08] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[01:04:08] [Server thread/INFO]:         __    
+[01:04:08] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.0
+[01:04:08] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[01:04:08] [Server thread/INFO]: 
+[01:04:08] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[01:04:08] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[01:04:09] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[01:04:09] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[01:04:09] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1203ms)
+[01:04:09] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
+[01:04:10] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.0.
+[01:04:11] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[01:04:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.9.0]
+[01:04:11] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[01:04:11] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.9+6959-7adf70b
+[01:04:11] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[01:04:11] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.0
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 1565b8f
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[01:04:12] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[01:04:12] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21.PaperweightAdapter as the Bukkit adapter
+[01:04:13] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:04:13] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:04:13] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:04:13] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:04:13] [Server thread/INFO]: Preparing level "world"
+[01:04:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[01:04:15] [Server thread/INFO]: Time elapsed: 1051 ms
+[01:04:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[01:04:15] [Server thread/INFO]: Time elapsed: 297 ms
+[01:04:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[01:04:16] [Server thread/INFO]: Time elapsed: 139 ms
+[01:04:16] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.7
+[01:04:16] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[01:04:16] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
+[01:04:16] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.13
+[01:04:16] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
+[01:04:16] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises-11.0.13-Premium.jar
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_21_R1) (MC: 1.21)
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1695
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Build Date: 07/11/2025 07:53
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Build Hash: e48e4d4b~1
+[01:04:16] [Server thread/WARN]: [LibsDisguises] You are running an older minor version of Minecraft, you are currently using 1.21, consider updating to 1.21.4
+[01:04:16] [Server thread/WARN]: [LibsDisguises] Your version of Minecraft will not be supported in the future.
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Registered to: 1505240 (17)
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Premium enabled, thank you for supporting Lib's Disguises!
+[01:04:16] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will scale down (when possible) oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
+[01:04:17] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_5/15...
+[01:04:17] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_5/15 in 310.729601ms
+[01:04:19] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[01:04:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: libsdisguises [1.0.0]
+[01:04:19] [Server thread/INFO]: [LibsDisguises] PlaceholderAPI support enabled
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Enabling UpgradeableSpawners v4.15.16
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Version: 4.15.16 Previous: 4.15.16
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Server: 1.21.0 running Paper
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Licensed to: 1505240
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Experiencing issues or having questions? Join our Discord!
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Discord: https://discord.incredibleplugins.com
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Wiki: https://wiki.incredibleplugins.com/upgradeablespawners
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners]  
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Using SQLite as database driver.
+[01:04:19] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[01:04:19] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Successful connected to SQL database.
+[01:04:19] [Server thread/INFO]: [UpgradeableSpawners] Database is ready.
+[01:04:20] [Server thread/INFO]: [UpgradeableSpawners] Entity stacking capability enabled.
+[01:04:20] [Server thread/INFO]: [BuffedItems] Enabling BuffedItems v1.1.1
+[01:04:20] [Server thread/INFO]: [BuffedItems] PlaceholderAPI found! Enabling placeholder support.
+[01:04:20] [Server thread/INFO]: [BuffedItems] BuffedItems has been enabled!
+[01:04:20] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
+[01:04:20] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_21_R1 (1.21).
+[01:04:20] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21! Trying to find NMS support
+[01:04:20] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[01:04:20] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[01:04:20] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
+[01:04:20] [Server thread/INFO]: [MonlyTPA] Enabling MonlyTPA v1.0.0
+[01:04:20] [Server thread/INFO]: [MonlyTPA] TPA module enabled. Loading configuration and registering functionalities.
+[01:04:20] [Server thread/WARN]: [MonlyTPA] Could not save tpa_config.yml to plugins/MonlyTPA/modules/tpa/tpa_config.yml because tpa_config.yml already exists.
+[01:04:20] [Server thread/WARN]: [MonlyTPA] Could not save settings_menu.yml to plugins/MonlyTPA/modules/tpa/settings_menu.yml because settings_menu.yml already exists.
+[01:04:20] [Server thread/WARN]: [MonlyTPA] Could not save tpalist_menu.yml to plugins/MonlyTPA/modules/tpa/tpalist_menu.yml because tpalist_menu.yml already exists.
+[01:04:20] [Server thread/INFO]: [MonlyTPA] Loaded 1 player TPA settings.
+[01:04:20] [Server thread/INFO]: [MonlyTPA] MonlyTPA has been enabled successfully.
+[01:04:20] [Server thread/INFO]: [Staff] Enabling Staff v1.0
+[01:04:21] [Server thread/INFO]: [Staff] Staff Plugin has been enabled!
+[01:04:21] [Server thread/INFO]: [AlixSystem] Enabling AlixSystem v3.7.0
+[01:04:21] [Server thread/INFO]: [AlixSystem] Instantiated reflections with: Version Regex: 'null' Bukkit Version: 21
+[01:04:21] [Server thread/INFO]: Preparing start region for dimension minecraft:world_alix_captcha
+[01:04:21] [Server thread/INFO]: Time elapsed: 85 ms
+[01:04:21] [Server thread/INFO]: [AlixSystem] Optimizing chunk rendering in the verification world thanks to the Paper environment
+[01:04:21] [Attach Listener/ERROR]: [STDERR] [sun.instrument.InstrumentationImpl] WARNING: A Java agent has been loaded dynamically (/tmp/byteBuddyAgent14295434062273484233.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[01:04:21] [Server thread/INFO]: [AlixSystem] Using Fast Unsafe Epoll for FireWall Protection. Fast IPv4 look-ups are Enabled.
+[01:04:22] [Server thread/INFO]: [AlixVirtualLimbo] Starting virtual server...
+[01:04:22] [Server thread/INFO]: [AlixVirtualLimbo] Using Java for compression
+[01:04:28] [Server thread/INFO]: [AlixVirtualLimbo] Server started.
+[01:04:30] [Server thread/INFO]: [AlixSystem] Successfully pre-loaded the captcha world
+[01:04:30] [Server thread/INFO]: [AlixSystem] Using the optimized PaperAlixScheduler for task execution.
+[01:04:30] [Server thread/INFO]: [AlixSystem] Async scheduler parallelisms: 2
+[01:04:30] [Server thread/INFO]: [AlixSystem] Using VirtualThreads for blocking tasks execution.
+[01:04:30] [Server thread/INFO]: [SMP] Enabling SMP v1.9
+[01:04:30] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.24.0
+[01:04:30] [Server thread/INFO]: [ItemEditor] Enabling ItemEditor v2.1.0
+[01:04:30] [Server thread/INFO]: [ItemEditor] Reloading items.
+[01:04:30] [Server thread/INFO]: [ItemEditor] Loaded 0 items from storage.
+[01:04:30] [Server thread/INFO]: [ItemEditor] Enabled PlaceholderAPI support.
+[01:04:30] [Server thread/INFO]: [SGChat] Enabling SGChat v1.0.4
+[01:04:30] [Server thread/INFO]:  
+[01:04:30] [Server thread/INFO]: ╔═════════════════════════════════════════════════════════════╗
+[01:04:30] [Server thread/INFO]: ║     ____   ____   ____ _           _                        ║
+[01:04:30] [Server thread/INFO]: ║    / ___| / ___| / ___| |__   __ _| |_                      ║
+[01:04:30] [Server thread/INFO]: ║    \___ \| |  _ | |   | '_ \ / _` | __|                     ║
+[01:04:30] [Server thread/INFO]: ║     ___) | |_| || |___| | | | (_| | |_                      ║
+[01:04:30] [Server thread/INFO]: ║    |____/ \____| \____|_| |_|\__,_|\__|                     ║
+[01:04:30] [Server thread/INFO]: ║                                                             ║
+[01:04:30] [Server thread/INFO]: ╚═════════════════════════════════════════════════════════════╝
+[01:04:30] [Server thread/INFO]:  
+[01:04:30] [Server thread/INFO]: ✅ ¡El plugin SGChat se ha activado correctamente!
+[01:04:30] [Server thread/INFO]: Versión: 1.0.4
+[01:04:30] [Server thread/INFO]: Autor: Shoganai Studio
+[01:04:30] [Server thread/INFO]: Servidor de soporte: https://discord.gg/jB59YjpjQQ
+[01:04:30] [Server thread/INFO]:  
+[01:04:31] [Server thread/INFO]: [BetterStructures] Enabling BetterStructures v2.0.4
+[01:04:31] [Server thread/INFO]:     ____       __  __            _____ __                  __                      
+[01:04:31] [Server thread/INFO]:    / __ )___  / /_/ /____  _____/ ___// /________  _______/ /___  __________  _____
+[01:04:31] [Server thread/INFO]:   / __  / _ \/ __/ __/ _ \/ ___/\__ \/ __/ ___/ / / / ___/ __/ / / / ___/ _ \/ ___/
+[01:04:31] [Server thread/INFO]:  / /_/ /  __/ /_/ /_/  __/ /   ___/ / /_/ /  / /_/ / /__/ /_/ /_/ / /  /  __(__  ) 
+[01:04:31] [Server thread/INFO]: /_____/\___/\__/\__/\___/_/   /____/\__/_/   \__,_/\___/\__/\__,_/_/   \___/____/
+[01:04:31] [Server thread/INFO]: [BetterStructures] Initialized version 2.0.4!
+[01:04:31] [Server thread/INFO]: [BetterStructures] Supported server version detected: v1_21_R1
+[01:04:31] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 158 ms to scan 1 urls, producing 1 keys and 5 values
+[01:04:32] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 9 ms to scan 1 urls, producing 1 keys and 29 values
+[01:04:32] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 1 keys and 1 values
+[01:04:32] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 54 ms to scan 104 urls, producing 0 keys and 0 values
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:32] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:34] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3953). Data may be incompatible.
+[01:04:36] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 1 keys and 10 values
+[01:04:36] [Server thread/INFO]: [DiscordSRV] Enabling DiscordSRV v1.30.1
+[01:04:36] [Server thread/INFO]: [TAB] Enabling TAB v5.3.2
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer.designs.default: Configuration section "header-footer.designs.default.footer" is expected to be of type List, but was String (</#FFFF00>"). Using default value "[]".
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "owner". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "dev". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "admin". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "mod". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "helper". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "belowname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:04:37] [pool-30-thread-1/WARN]: [DiscordSRV] 
+
+The current build of DiscordSRV is outdated by 10 commits! Get the latest build at your favorite distribution center.
+
+Modrinth: https://modrinth.com/plugin/discordsrv/
+Github: https://github.com/DiscordSRV/DiscordSRV/releases/
+Direct Download: https://get.discordsrv.com/
+
+[01:04:37] [Server thread/INFO]: [TAB] [WARN] Found a total of 7 issues.
+[01:04:37] [Server thread/INFO]: [TAB] Enabled in 1047ms
+[01:04:37] [Server thread/INFO]: [AeternumSeasons] Enabling AeternumSeasons v1.2
+[01:04:38] [Server thread/INFO]: Preparing start region for dimension minecraft:aeternum_frost
+[01:04:39] [Server thread/INFO]: Time elapsed: 763 ms
+[01:04:39] [Server thread/INFO]: [AeternumSeasons] [World] Snow world 'aeternum_frost' created and loaded successfully.
+[01:04:39] [Server thread/INFO]: [AeternumSeasons] [World] Creating heat world 'aeternum_heat'...
+[01:04:39] [Server thread/INFO]: Preparing start region for dimension minecraft:aeternum_heat
+[01:04:39] [Server thread/INFO]: Time elapsed: 587 ms
+[01:04:39] [Server thread/INFO]: [AeternumSeasons] [World] Heat world 'aeternum_heat' created and loaded.
+[01:04:39] [Server thread/INFO]: [AeternumSeasons] AeternumSeasons enabled.
+[01:04:40] [Server thread/INFO]: [spark] Starting background profiler...
+[01:04:41] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[01:04:41] [Server thread/INFO]: Done preparing level "world" (27.589s)
+[01:04:41] [DiscordSRV - Initialization/ERROR]: [DiscordSRV] ===================================================
+[01:04:41] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  
+[01:04:41] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  DiscordSRV could not connect to Discord because:
+[01:04:41] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  The bot token is invalid
+[01:04:41] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  
+[01:04:41] [DiscordSRV - Initialization/ERROR]: [DiscordSRV] ===================================================
+[01:04:41] [Server thread/INFO]: Running delayed init tasks
+[01:04:41] [Server thread/INFO]: [DiscordSRV] Disabling DiscordSRV v1.30.1
+[01:04:41] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] Latest public release is 2.0.4
+[01:04:41] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] Your version is 2.0.4
+[01:04:41] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] You are running the latest version!
+[01:04:41] [Server thread/INFO]: [UpgradeableSpawners] [Integrations] Successfully integrated DecentHolograms as hologram manager.
+[01:04:41] [Craft Scheduler Thread - 6 - BuffedItems/INFO]: [BuffedItems] You are using the latest version. (1.1.1)
+[01:04:41] [Server thread/INFO]: [UpgradeableSpawners] [Integrations] Successfully integrated PlaceholderAPI for parsing placeholders from 3rd party plugins in chat messages and GUI menus
+[01:04:41] [Server thread/INFO]: [UpgradeableSpawners] [Integrations] Successfully integrated LuckPerms for offline permission lookups.
+[01:04:41] [Server thread/INFO]: [UpgradeableSpawners] Using default item currency for economy. You can edit the currency item for each locale in the corresponding GUI language files. Strict mode: false
+[01:04:41] [Server thread/INFO]: Done (66.350s)! For help, type "help"
+[01:04:41] [Server thread/INFO]: Timings Reset
+[01:04:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: servertime [3.2]
+[01:04:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[01:04:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[01:04:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[01:04:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[01:04:41] [Server thread/INFO]: 5 placeholder hook(s) registered!
+[01:04:41] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] All commands have been successfully registered.
+[01:04:42] [Server thread/INFO]: [BuffedItems] Loaded 12 buffed items from config (12 valid, 0 with errors) in 4ms
+[01:04:42] [Server thread/INFO]: [BuffedItems] ==================================================
+[01:04:42] [Server thread/INFO]: [BuffedItems] BuffedItems v1.1.1 - Startup Summary
+[01:04:42] [Server thread/INFO]: [BuffedItems]   Total Items: 12
+[01:04:42] [Server thread/INFO]: [BuffedItems]   Valid Items: 12
+[01:04:42] [Server thread/INFO]: [BuffedItems]   Debug Level: 0 (OFF)
+[01:04:42] [Server thread/INFO]: [BuffedItems] ==================================================
+[01:04:42] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] 
+ You're running an outdated version of AlixSystem (Using 3.7.0 with the newest being 3.7.1)! An update is available at: https://www.spigotmc.org/resources/alixsystem.109144/
+
+[01:04:42] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] Using the optimized Unsafe Effect Handler for potion effect management
+[01:04:42] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] Pre-generated the captcha pool with the size 3.
+[01:04:42] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] All files were successfully loaded!
+[01:04:42] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] AlixSystem has been successfully enabled.
+[01:04:42] [ForkJoinPool-3-worker-1/INFO]: [AlixSystem] Fully loaded the FireWall DataBase. Built-in blacklisted IPs: 282894 Blacklisted by this server: 0 Total: 282894
+[01:04:46] [ForkJoinPool.commonPool-worker-3/INFO]: [UpgradeableSpawners] There is a new version available: 4.15.17
+[01:05:10] [Server thread/INFO]: [AlixSystem] Player Aurelio_White[127.67.36.15] joined and was automatically verified for: Premium AutoLogin
+[01:05:25] [Server thread/INFO]: Aurelio_White issued server command: /pl
+[01:05:35] [Server thread/INFO]: Aurelio_White issued server command: /version SkinsRestorer
+[01:06:37] [Server thread/INFO]: Aurelio_White issued server command: /time set day
+[01:06:37] [Server thread/INFO]: [Aurelio_White: Set the time to 1000]
+[01:06:37] [Server thread/INFO]: [AeternumSeasons] [AeternumSeasons] Season changed to SPRING - usando derretido progresivo alrededor de jugadores.
+[01:06:37] [Server thread/INFO]: [AeternumSeasons] [BiomeSpoof] Season changed: using smooth repaint (no global revert).
+[01:06:37] [Server thread/INFO]: [AeternumSeasons] [Events] Evento iniciado: festival por 3 día(s). motivo=auto
+[01:07:00] [Server thread/INFO]: Named entity Zombie['Storm-touched Creature'/208, uuid='85ecabaf-39fe-4690-9425-211025c19bea', l='ServerLevel[world]', x=-497.73, y=65.00, z=-1457.73, cpos=[-32, -92], tl=3171, v=true] died: Storm-touched Creature burned to death
+[01:25:47] [Server thread/INFO]: [AeternumSeasons] [AeternumSeasons] Season changed to SPRING - usando derretido progresivo alrededor de jugadores.
+[01:25:47] [Server thread/INFO]: [AeternumSeasons] [BiomeSpoof] Season changed: using smooth repaint (no global revert).

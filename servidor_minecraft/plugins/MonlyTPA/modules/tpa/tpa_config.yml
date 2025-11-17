@@ -1,0 +1,128 @@
+# Configuration specific to the TPA module
+cooldown_seconds: 60 # Cooldown in seconds between TPA requests
+request_timeout_seconds: 60 # Time in seconds before a TPA request expires
+countdown_seconds: 5 # Countdown duration in seconds before teleportation
+
+messages:
+  prefix: "&e&lᴀɴᴏᴛʜᴇʀꜱᴍᴘ &7&l» &f" # Plugin prefix in chat
+
+  # Messages for normal TPA requests (/tpa)
+  request_sent: "&fYou have sent a teleport request to &b%player%&f."
+  request_received: |
+    &8 &m-----------------------------------------------
+    &fYou have received a teleport request from &b%player%&f.
+  request_accepted_sender: "&fYour request to &b%player% &fhas been accepted. &bPreparing teleport!"
+  request_accepted_target: "&fYou have accepted &b%player%'s &frequest. Teleport in progress!"
+  request_denied_sender: "&fYour teleport request to &b%player% &fhas been denied."
+  request_denied_target: "&fYou have denied &b%player%'s &fteleport request."
+  no_pending_request: "&fYou do not have any pending teleport requests."
+  no_target_player: "&fPlayer &b%player% &fis not online or does not exist."
+  already_sent_request: "&fYou already have a TPA request pending for &b%player%&f. Please wait."
+  request_timeout: "&fThe TPA request to &b%player% &fhas expired."
+  no_permission: "&fInsufficient permissions. You do not have access to use this command."
+  on_cooldown: "&fYou must wait &b%time% &fseconds before sending another TPA request."
+  cannot_tpa_self: "&fYou cannot send a TPA request to yourself."
+  request_cancelled_on_quit: "&fThe TPA request to &b%player% &fhas been cancelled because they disconnected."
+  teleport_cancelled_on_move: "&fTeleport has been cancelled. Do not move during the countdown!"
+  teleport_cancelled_target_quit: "&fYour teleport has been cancelled because &b%player% &fdisconnected."
+
+  # Messages for Title and ActionBar when receiving a request
+  title_received_title: "&b⚓ &f&lTPA Request &b⚓"
+  title_received_subtitle: "&fFrom: &b%player%"
+  action_bar_received: "&fUse &b/tpaccept &for &b/tpadeny &fto respond."
+
+  # Messages for chat buttons
+  button_accept_text: "            &a&l[ACCEPT]"
+  button_deny_text: | 
+    &c&l[DENY]
+    &8 &m-----------------------------------------------
+  button_accept_hover: "&8Click to accept."
+  button_deny_hover: "&8Click to deny."
+
+  # Messages for countdown
+  countdown_title: "&fTeleporting in..."
+  countdown_subtitle: "&b%time% &fseconds"
+  countdown_action_bar: "&fTeleporting in &b%time% &fseconds..."
+  countdown_teleporting: "&fTeleport successful!."
+
+  # Messages for tpaignore
+  ignore_player_added: "&fYou are now ignoring TPA requests from &b%player%&f."
+  ignore_player_removed: "&fYou are no longer ignoring TPA requests from &b%player%&f."
+  ignore_player_not_ignoring: "&fYou are not ignoring &b%player%&f."
+  ignore_player_already_ignoring: "&fYou are already ignoring &b%player%&f."
+  ignore_self: "&fYou cannot ignore yourself. Are you sure you want to do that?"
+  ignored_by_player: "&b%player% &fhas you on their ignore list and cannot receive your request."
+
+  # Messages for tpahere
+  tpahere_sent: "&fYou have requested &b%player% &fto teleport to your location."
+  tpahere_received: "&b%player% &fhas requested you to teleport to their location."
+  tpahere_accepted_sender: "&fYour request to &b%player% &fhas been accepted. &b%player% &fis teleporting to you!"
+  tpahere_accepted_target: "&fYou have accepted &b%player%'s &frequest to come to your location. Preparing teleport!"
+  tpahere_denied_sender: "&fYour teleport request to &b%player% &fhas been denied."
+  tpahere_denied_target: "&fYou have denied &b%player%'s &frequest to come to your location."
+  tpahere_already_sent: "&fYou already have a TPAHere request pending for &b%player%&f. Please wait."
+  tpahere_request_timeout: "&fThe TPAHere request from &b%player% &fhas expired."
+  tpahere_request_cancelled_on_quit: "&fThe TPAHere request to &b%player% &fhas been cancelled because they disconnected."
+
+  # Messages for tpadisable / tpaenable
+  tpa_disabled: "&fYou have &c&ndisabled&r&f TPA request reception successfully."
+  tpa_enabled: "&fYou have &a&nenabled&r&f TPA request reception successfully."
+  tpa_already_disabled: "&fTPA requests are already &c&ndisabled&r&f for you."
+  tpa_already_enabled: "&fTPA requests are already &a&nenabled&r&f for you."
+  tpa_target_disabled: "&b%player% &fhas TPA requests &c&ndisabled&f."
+
+  # Messages for /tpasettings menu
+  settings_menu_opened: "&fYou have opened the TPA settings menu."
+  setting_tpa_reception_toggled: "&fTPA reception %status% &fsuccessfully."
+  setting_title_messages_toggled: "&fOn-screen messages %status% &fsuccessfully."
+  setting_actionbar_messages_toggled: "&fAction Bar messages %status% &fsuccessfully."
+  status_enabled: "&aEnabled"
+  status_disabled: "&cDisabled"
+
+  # Messages for /tpalist
+  tpalist_no_pending_requests: "&fYou have no pending TPA requests."
+  tpalist_menu_title: "&fPending TPA Requests"
+  tpalist_item_lore_tpa:
+    - "&7Type: &aTPA &7(to &b%target_name%&7)"
+    - "&7Sender: &b%sender_name%"
+    - "&7Expires in: &b%time_left% &fseconds"
+    - ""
+    - "&aLeft Click to Accept"
+    - "&cRight Click to Deny"
+  tpalist_item_lore_tpahere:
+    - "&7Type: &aTPAHERE &7(from &b%sender_name%&7)"
+    - "&7Sender: &b%sender_name%"
+    - "&7Expires in: &b%time_left% &fseconds"
+    - ""
+    - "&aLeft Click to Accept"
+    - "&cRight Click to Deny"
+
+  # Messages for /tpaback
+  tpaback_teleported: "&fYou have teleported back to your previous location."
+  tpaback_no_previous_location: "&fYou do not have a previous location saved."
+  tpaback_location_cleared: "&fYour back location has been cleared."
+
+  # Messages for /tpacancel
+  tpacancel_success_tpa: "&fYou have cancelled your TPA request to &b%player%&f."
+  tpacancel_success_tpahere: "&fYou have cancelled your TPAHere request to &b%player%&f."
+  tpacancel_no_sent_request: "&fYou do not have any pending TPA/TPAHere requests sent."
+
+  # Messages for /tpaauto
+  tpaauto_enabled: "&fTPA requests will now be &aautomatically accepted&f."
+  tpaauto_disabled: "&fTPA requests will &cNO LONGER be automatically accepted&f."
+  tpaauto_already_enabled: "&fTPA requests are already set to &aautomatically accept&f."
+  tpaauto_already_disabled: "&fTPA requests are already set to &cNO LONGER automatically accept&f."
+  tpaauto_accepted: "&fRequest from &b%player% &fautomatically accepted."
+
+
+# Sound configurations
+sounds:
+  countdown_tick_sound: "UI_BUTTON_CLICK"
+  countdown_final_sound: "ENTITY_PLAYER_LEVELUP"
+  teleport_sound: "ENTITY_ENDERMAN_TELEPORT"
+  sound_volume: 1.0
+  sound_pitch: 1.0
+  settings_toggle_sound_general: "UI_BUTTON_CLICK"
+  settings_toggle_sound_tpa_reception: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  settings_toggle_sound_tpa_auto: "BLOCK_NOTE_BLOCK_HAT"
+  tpaback_sound: "ENTITY_ENDER_PEARL_THROW"

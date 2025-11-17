@@ -1,0 +1,14 @@
+# GUI Settings for /tpalist
+menu_title: "&fPending TPA Requests"
+menu_size: 54 # Default size to fit many requests (multiple of 9)
+filler_item:
+  material: GRAY_STAINED_GLASS_PANE
+  display_name: " "
+  lore: []
+
+# Item definition for a pending TPA request
+request_item:
+  material: COMPASS # Material to represent a request (e.g., COMPASS, PAPER, PLAYER_HEAD)
+  display_name: "&b%sender_name%" # Name of the player who sent the request
+  # Lore defined in tpa_config.yml: tpalist_item_lore_tpa and tpalist_item_lore_tpahere
+  enchanted: false # Should the item glow?

@@ -1,0 +1,7 @@
+winter_cold:
+  enabled: true
+  armor_min_pieces: 2
+  check_period_ticks: 40
+  near_heat_radius: 6
+  damage_per_tick: 0.5
+  slowness_level: 1

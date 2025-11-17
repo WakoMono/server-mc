@@ -1,0 +1,5 @@
+enabled:
+  - en_US
+  - es_ES
+  - id_ID
+default: auto   # auto = usar idioma del cliente; si no está soportado, cae a en_US

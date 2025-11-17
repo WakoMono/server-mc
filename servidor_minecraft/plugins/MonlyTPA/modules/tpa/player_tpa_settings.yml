@@ -1,0 +1,6 @@
+players:
+  a4e020f0-6c43-3882-a3db-ffd72a99ca17:
+    receiveTPA: true
+    receiveTitle: true
+    receiveActionBar: true
+    autoAcceptTPA: false

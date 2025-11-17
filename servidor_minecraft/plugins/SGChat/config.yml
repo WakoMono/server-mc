@@ -1,0 +1,101 @@
+# ╔════════════════════════════════════════════════════════════╗
+# ║                  SGChat - Configuration                    ║
+# ╚════════════════════════════════════════════════════════════╝
+
+# Whether to check for updates (true/false)
+check-update: true
+
+# Custom placeholders configuration
+custom-placeholders:
+  # Example:
+  # server: "My Awesome Server"
+  # website: "www.myserver.com"
+  # You can use color codes with &
+  # The plugin will automatically wrap these in {} when replacing
+  server: '&6My Server'
+  website: '&bwww.example.com'
+  discord: '&9discord.gg/example'
+
+chat:
+  # General chat format
+  enable-format: true
+  format: '&8[&a{level}&8] &7{displayname} &8» &f{message}'
+  # Placeholders: {player}, {displayname}, {message}, {level}
+
+    # Anti-spam
+  anti-spam-delay: 1s # Minimum time between messages
+  block-duplicate-messages: false
+  
+  # Blocked words
+  blocked-words:
+  - bitch
+  - dick
+  - nigga
+  
+  # Automatic mute system
+  # If enable-mute is false, no warnings or mutes will be given for prohibited words
+  warnings-before-mute: 3
+  enable-mute: false
+  mute-duration: 5m
+  
+  # Group formats (LuckPerms/Vault)
+  # If enable-group-formats is false, only the general format will be used
+  enable-group-formats: true
+  group-formats:
+    owner: '&8┃ &c&lᴏᴡɴᴇʀ &8┃ &f{displayname} &8» &f{message}'
+    admin: '&8┃ &c&lADMIN &8┃ &f{displayname} &8» &f{message}'
+    mod: '&8┃ &9&lMOD &8┃ &f{displayname} &8» &7{message}'
+    vip: '&8┃ &6&lVIP &8┃ &f{displayname} &8» &e{message}'
+    default: '&8┃ &7&lᴘʟᴀʏᴇʀ &8┃ &7{displayname} &8» &f{message}'
+
+# ╔════════════════════════════════════════════════════════════╗
+# ║                  Global Messages                           ║
+# ╚════════════════════════════════════════════════════════════╝
+
+join:
+  enabled: true
+  message: '&8[&a+&8] &a{player}'
+
+quit:
+  enabled: true
+  message: '&8[&4-&8] &4{player}'
+
+discord:
+  # Enable sending simple notifications to a Discord webhook
+  enable: false
+  # Discord webhook URL (https://discord.com/api/webhooks/...) 
+  webhook-url: ''
+  # Username and avatar used when sending webhooks
+  username: SGChat
+  avatar-url: ''
+  # Which events to send
+  send-join: true
+  send-quit: true
+  # Message templates (plain text, placeholders: {player})
+  join-message: '{player} joined'
+  quit-message: '{player} left'
+  # Embed options
+  use-embeds: false
+  join-embed-title: '{player} joined the server'
+  join-embed-description: '{player} joined. Welcome!'
+  quit-embed-title: '{player} left the server'
+  quit-embed-description: '{player} left. Farewell!'
+  # Chat relay: send player chat messages to Discord webhook
+  send-chat: true
+  # Template for chat messages sent to Discord (placeholders: {player}, {displayname}, {message}, {server})
+  chat-message-template: '**{displayname}** » {message}'
+
+#  ╔════════════════════════════════════════════════════════════╗
+#  ║                  MOTD Messages                             ║
+#  ╚════════════════════════════════════════════════════════════╝
+
+motd:
+  enabled: false
+  message:
+  - '&8&m----------------------------------------'
+  - '  &6&lWelcome to {server}'
+  - ''
+  - '  &7Players online: &b{online}&7/&b{maxplayers}'
+  - '  &eJoin our Discord: {discord}'
+  - '  &eVisit our website: {website}'
+  - '&8&m----------------------------------------'

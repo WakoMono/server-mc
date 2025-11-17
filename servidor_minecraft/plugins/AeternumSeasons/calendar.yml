@@ -1,0 +1,6 @@
+calendar:
+  days_per_season: 28
+  advance:
+    follow_overworld_time: true # ⬅️ clave para evitar saltos dobles
+    on_sleep: true # se ignora si follow_overworld_time = true
+    real_time_minutes_per_day: 0 # 0 = desactivado; si >0, usa modo “tiempo real”

@@ -1,0 +1,68 @@
+[00:00:10] [Server thread/INFO]: torresdyyy issued server command: /seed
+[00:03:35] [Server thread/INFO]: Hiruma_npc has made the advancement [Suit Up]
+[00:07:33] [Server thread/INFO]: Hiruma_npc has made the advancement [Diamonds!]
+[00:08:22] [Server thread/INFO]: Hiruma_npc has made the advancement [Hot Stuff]
+[00:10:08] [Server thread/INFO]: Hiruma_npc has made the advancement [Not Today, Thank You]
+[00:10:25] [Server thread/INFO]: marioksk113 has made the advancement [Acquire Hardware]
+[00:11:04] [Server thread/INFO]: marioksk113 has made the advancement [Isn't It Iron Pick]
+[00:12:48] [Server thread/INFO]: marioksk113 has made the advancement [Monster Hunter]
+[00:13:50] [Server thread/INFO]: marioksk113 has made the advancement [Diamonds!]
+[00:14:54] [Server thread/INFO]: Aurelio_White has made the advancement [Not Today, Thank You]
+[00:16:42] [Server thread/INFO]: Aurelio_White has made the advancement [Suit Up]
+[00:17:37] [Server thread/INFO]: torresdyyy has made the advancement [Suit Up]
+[00:18:47] [Server thread/INFO]: marioksk113 was slain by Zombie
+[00:18:51] [Server thread/INFO]: marioksk113 lost connection: Disconnected
+[00:18:51] [Server thread/INFO]: marioksk113 left the game
+[00:19:48] [Server thread/INFO]: Hiruma_npc was blown up by Creeper
+[00:19:53] [Server thread/INFO]: Hiruma_npc lost connection: Disconnected
+[00:19:53] [Server thread/INFO]: Hiruma_npc left the game
+[00:20:07] [Server thread/INFO]: torresdyyy lost connection: Disconnected
+[00:20:07] [Server thread/INFO]: torresdyyy left the game
+[00:20:11] [User Authenticator #4/INFO]: UUID of player torresdyyy is d873057a-6ed2-38d0-8343-409f8d2e946c
+[00:20:11] [Server thread/INFO]: torresdyyy[/127.68.2.234:55075] logged in with entity id 26648 at ([world]-96.0, 64.0, -48.0)
+[00:21:05] [Server thread/INFO]: torresdyyy lost connection: Disconnected
+[00:21:05] [Server thread/INFO]: torresdyyy left the game
+[00:21:08] [User Authenticator #4/INFO]: UUID of player torresdyyy is d873057a-6ed2-38d0-8343-409f8d2e946c
+[00:21:08] [Server thread/INFO]: torresdyyy[/127.68.2.234:33267] logged in with entity id 27047 at ([world]-96.0, 64.0, -48.0)
+[00:23:28] [Server thread/INFO]: Aurelio_White issued server command: /userlogin reload
+[00:23:48] [Server thread/INFO]: torresdyyy lost connection: Disconnected
+[00:23:48] [Server thread/INFO]: torresdyyy left the game
+[00:23:50] [User Authenticator #5/INFO]: UUID of player torresdyyy is d873057a-6ed2-38d0-8343-409f8d2e946c
+[00:23:51] [Server thread/INFO]: torresdyyy[/127.68.2.234:43741] logged in with entity id 27863 at ([world]-233.7813370786431, 49.0, -109.47739417108134)
+[00:24:53] [Server thread/INFO]: Aurelio_White issued server command: /userlogin reload
+[00:25:02] [Server thread/INFO]: torresdyyy lost connection: Disconnected
+[00:25:02] [Server thread/INFO]: torresdyyy left the game
+[00:25:06] [User Authenticator #6/INFO]: UUID of player torresdyyy is d873057a-6ed2-38d0-8343-409f8d2e946c
+[00:25:07] [Server thread/INFO]: torresdyyy joined the game
+[00:25:07] [Server thread/INFO]: torresdyyy[/127.68.2.234:35975] logged in with entity id 28214 at ([world]-158.40771529045085, 24.0, -124.5043008787802)
+[00:29:24] [Server thread/INFO]: Aurelio_White has made the advancement [Diamonds!]
+[00:34:34] [Server thread/INFO]: Aurelio_White issued server command: /tpa torresdyyy
+[00:34:34] [Server thread/INFO]: [MonlyTPA] DEBUG TPA (send): Request from Aurelio_White to torresdyyy
+[00:34:34] [Server thread/INFO]: [MonlyTPA] DEBUG TPA (send): torresdyyy's settings: isReceiveTPA = true, isReceiveTitle = true, isReceiveActionBar = true, isAutoAcceptTPA = false
+[00:34:49] [Server thread/INFO]: torresdyyy issued server command: /tpadeny
+[00:34:52] [Server thread/INFO]: Aurelio_White issued server command: /tpa torresdyyy
+[00:34:52] [Server thread/INFO]: [MonlyTPA] DEBUG TPA (send): Request from Aurelio_White to torresdyyy
+[00:34:52] [Server thread/INFO]: [MonlyTPA] DEBUG TPA (send): torresdyyy's settings: isReceiveTPA = true, isReceiveTitle = true, isReceiveActionBar = true, isAutoAcceptTPA = false
+[00:34:56] [Server thread/INFO]: Aurelio_White issued server command: /gamemode spectator
+[00:34:56] [Server thread/INFO]: [Aurelio_White: Set own game mode to Spectator Mode]
+[00:35:13] [Server thread/INFO]: Aurelio_White issued server command: /gamemode survival}
+[00:35:14] [Server thread/INFO]: Aurelio_White issued server command: /gamemode survival
+[00:35:14] [Server thread/INFO]: [Aurelio_White: Set own game mode to Survival Mode]
+[00:35:34] [Server thread/INFO]: Aurelio_White issued server command: /ie edit
+[00:35:57] [Server thread/WARN]: Aurelio_White moved too quickly! -2.1023116541786067,0.0,23.84954736853598
+[00:35:58] [Server thread/WARN]: Aurelio_White moved too quickly! -0.1725122301296551,0.0,23.721353524791937
+[00:36:01] [Server thread/INFO]: Aurelio_White issued server command: /ie edit
+[00:36:16] [Server thread/WARN]: Aurelio_White moved too quickly! 0.707809402847829,-0.07840000152587834,23.721353524791937
+[00:36:21] [Server thread/WARN]: Aurelio_White moved too quickly! 3.699563282229633,0.0,9.362953131740142
+[00:36:21] [Server thread/WARN]: Aurelio_White moved too quickly! 9.217040426564779,-0.07840000152587834,23.50994371324083
+[00:36:22] [Server thread/WARN]: Aurelio_White moved too quickly! 5.604386348865091,-0.07840000152587834,14.295131789736558
+[00:36:23] [Server thread/WARN]: Aurelio_White moved too quickly! 3.5802163646191616,0.0,9.347649442765203
+[00:36:23] [Server thread/WARN]: Aurelio_White moved too quickly! 8.970908452436731,-0.07840000152587834,23.604979623323516
+[00:36:23] [Server thread/WARN]: Aurelio_White moved too quickly! 8.970847764401867,-0.07840000152587834,23.60500278188897
+[00:36:32] [Server thread/WARN]: Aurelio_White moved too quickly! 4.0991876192027235,0.0,9.134180224020042
+[00:36:35] [Server thread/INFO]: Aurelio_White issued server command: /ie edit
+[00:37:01] [Server thread/WARN]: Aurelio_White moved wrongly!
+[00:37:31] [Server thread/INFO]: Aurelio_White issued server command: /ie edit
+[00:37:57] [Server thread/INFO]: Aurelio_White issued server command: /ie reopen
+[00:38:40] [Server thread/INFO]: Aurelio_White issued server command: /ie edi
+[00:38:47] [Server thread/INFO]: Aurelio_White issued server command: /ie edit

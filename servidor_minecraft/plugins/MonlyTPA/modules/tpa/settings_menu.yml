@@ -1,0 +1,99 @@
+# GUI Settings for /tpasettings
+menu_title: "&6TPA Settings" # Menu title
+menu_type: CHEST # Inventory type: CHEST, HOPPER (only for 1, 3 or 5 slots)
+menu_size: 27 # Inventory size for CHEST: must be a multiple of 9 (9, 18, 27, 36, 45, 54)
+
+# Item definitions for each setting
+# %status% will be replaced by 'Enabled' or 'Disabled' (defined in tpa_config.yml)
+items:
+  # Options to toggle global TPA reception
+  toggle_tpa_reception:
+    slot: 10 # GUI slot (0-indexed)
+    material_enabled: LIME_DYE # Item material when enabled
+    material_disabled: GRAY_DYE # Item material when disabled
+    display_name: "&aTPA Reception: &l%status%" # Visible item name
+    lore: # Item lore
+      - "&7Click to toggle if you"
+      - "&7can receive TPA requests."
+      - ""
+      - "&aCurrent: &l%status%"
+    enchanted_enabled: true # Should the item glow when enabled?
+    enchanted_disabled: false # Should the item glow when disabled?
+
+  # Options to toggle title messages
+  toggle_title_messages:
+    slot: 12
+    material_enabled: ORANGE_DYE
+    material_disabled: GRAY_DYE
+    display_name: "&6Title Messages: &l%status%"
+    lore:
+      - "&7Click to toggle if you"
+      - "&7receive title messages"
+      - "&7when receiving TPA requests."
+      - ""
+      - "&aCurrent: &l%status%"
+    enchanted_enabled: true
+    enchanted_disabled: false
+
+  # Options to toggle action bar messages
+  toggle_actionbar_messages:
+    slot: 14
+    material_enabled: YELLOW_DYE
+    material_disabled: GRAY_DYE
+    display_name: "&eAction Bar Messages: &l%status%"
+    lore:
+      - "&7Click to toggle if you"
+      - "&7receive action bar messages"
+      - "&7when receiving TPA requests."
+      - ""
+      - "&aCurrent: &l%status%"
+    enchanted_enabled: true
+    enchanted_disabled: false
+
+  # Option for /tpaback in the settings menu
+  toggle_tpaback_location:
+    slot: 16 # An available slot
+    material: CLOCK # Material for the item
+    display_name: "&9Go to Last TPA Location"
+    lore:
+      - "&7Click to teleport back"
+      - "&7to the location from where"
+      - "&7you sent your last TPA request."
+      - ""
+      - "&cWarning! Your location will be cleared after use."
+
+  # Option for /tpaauto in the settings menu
+  toggle_tpa_auto_accept:
+    slot: 22 # An available slot
+    material_enabled: REDSTONE_TORCH # Material for enabled
+    material_disabled: LEVER # Material for disabled
+    display_name: "&bAuto-accept TPA: &l%status%"
+    lore:
+      - "&7Click to toggle automatic"
+      - "&7acceptance of TPA requests."
+      - ""
+      - "&aCurrent: &l%status%"
+    enchanted_enabled: true
+    enchanted_disabled: false
+
+  # Filler item (optional)
+  filler_item:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: " "
+    lore: []
+
+  # Item to close the menu
+  close_menu:
+    slot: 26
+    material: IRON_DOOR
+    display_name: "&cClose Menu"
+    lore:
+      - "&7Click to close the"
+      - "&7settings menu."
+
+# Sound configurations for the menu (override general sounds if defined here)
+sounds:
+  toggle_sound_general: "UI_BUTTON_CLICK"
+  toggle_sound_tpa_reception: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  toggle_sound_tpa_auto: "BLOCK_NOTE_BLOCK_HAT"
+  tpaback_sound: "ENTITY_ENDER_PEARL_THROW"
